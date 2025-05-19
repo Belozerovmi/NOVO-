@@ -5,6 +5,7 @@
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 .menu {
@@ -1762,11 +1763,11 @@ footer {
   }
 
   .block {
-    width: 80px;
-    height: 130px;
+    width: 100px;
+    height: 150px;
   }
   .block span {
-    font-size: 12px;
+    font-size: 1px;
     line-height: 1.1;
   }
 
@@ -2043,21 +2044,21 @@ footer {
   }
   .img_txt1 {
     position: relative;
-    right: 310px;
+    right: 315px;
     top: -80px;
   }
 
   .img_txt1 h1 {
     font-family: Manrope;
     font-weight: 400;
-    font-size: 8px;
+    font-size: 10px;
     color: #fff;
     text-align: center;
   }
 
   .img_txt2 {
     position: relative;
-    right: 245px;
+    right: 258px;
     top: -90px;
   }
 
@@ -2077,22 +2078,53 @@ footer {
   .img_txt2 h1 {
     font-family: Manrope;
     font-weight: 400;
-    font-size: 10px;
+    font-size: 12px;
     color: #fff;
     text-align: center;
   }
 
   .img_txt3 {
     position: relative;
-    right: 190px;
+    right: 215px;
     top: -80px;
   }
 
   .img_txt3 h1 {
     font-family: Manrope;
     font-weight: 400;
-    font-size: 8px;
+    font-size: 10px;
     color: #fff;
     text-align: center;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1279px) {
+  .page_1_btn:hover,
+  .r_site_btn:hover,
+  .sec4_btn:hover {
+    color: #ffffff;
+    background-color: rgba(0, 150, 97, 1);
+  }
+
+  .page_1_btn:active,
+  .r_site_btn:active,
+  .sec4_btn:active {
+    color: rgba(0, 150, 97, 1);
+    background-color: #fff;
+  }
+
+  .cards_special a:hover {
+    background-color: transparent;
+  }
+
+  .cards_special a:active {
+    background-color: rgba(27, 27, 30, 1);
+  }
+
+  .arrow:hover {
+    background-color: transparent;
+  }
+  .arrow:active {
+    background-color: rgba(0, 150, 97, 1);
   }
 }
