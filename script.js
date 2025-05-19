@@ -19,3 +19,35 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const openPopUp = document.getElementById("open_pop_up");
+  const closePopUp = document.getElementById("pop_up_close");
+  const popUp = document.getElementById("pop_up"); // Добавлено document.
+
+  // Проверка существования элементов
+  if (!openPopUp || !closePopUp || !popUp) {
+    console.error("Один из элементов не найден!");
+    return;
+  }
+
+  openPopUp.addEventListener("click", function (e) {
+    e.preventDefault();
+    popUp.classList.add("active");
+  });
+
+  closePopUp.addEventListener("click", function (e) {
+    e.preventDefault();
+    popUp.classList.remove("active");
+  });
+  popUp.addEventListener("click", function (e) {
+    if (e.target === popUp) {
+      popUp.classList.remove("active");
+    }
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape") {
+      popUp.classList.remove("active");
+    }
+  });
+});

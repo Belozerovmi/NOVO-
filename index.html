@@ -19,6 +19,7 @@
   <body>
     <script src="script.js" defer></script>
     <button id="backToTop" class="back-to-top" title="Наверх">↑</button>
+
     <div class="header_sec1">
       <header class="header">
         <div class="logo">
@@ -207,9 +208,19 @@
             </div>
           </a>
         </div>
+
         <div class="special_offer">
           <div class="iphone_left">
             <img src="images/iphone.png" alt="" loading="lazy" />
+            <!-- pop up -->
+            <div class="pop_up" id="pop_up">
+              <div class="pop_up_container">
+                <div id="pop_up_body" class="pop_up_body">
+                  <div id="pop_up_close" class="pop_up_close">&#10006</div>
+                </div>
+              </div>
+            </div>
+            
           </div>
           <div class="right_site">
             <div class="right_site_txt">
@@ -221,7 +232,8 @@
                 Мы предложим индивидуальные <br />
                 условия сотрудничества
               </p>
-              <a href="#">
+
+              <a href="" id="open_pop_up">
                 <h2 class="r_site_btn">ПОДРОБНЕЕ</h2>
               </a>
             </div>

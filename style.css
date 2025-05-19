@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -459,6 +459,51 @@ li {
 .iphone_left img {
   width: 200px;
   height: 403px;
+}
+
+/* POP UP */
+#pop_up {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  scale: 0;
+  background-color: #00000022;
+  backdrop-filter: blur(20px);
+  z-index: 5;
+}
+
+#pop_up.active {
+  scale: 1;
+}
+
+.pop_up_container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.pop_up_body {
+  margin: auto;
+  width: 600px;
+  height: 680px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.15), 0 0 40px 0 rgba(0, 0, 0, 0.1);
+  /* spread-значение (-2px) помогает сделать границы мягче */
+  background-color: rgb(38, 38, 42);
+}
+
+.pop_up_close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 28px;
+  line-height: 0.8;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 100;
 }
 
 .right_site {
