@@ -1480,6 +1480,7 @@ footer {
     width: 479px;
     margin-bottom: 100px;
     flex-direction: column;
+    margin-top: 50px;
   }
   .sec3 {
     height: auto;
@@ -1489,11 +1490,11 @@ footer {
     height: auto;
   }
   .iphone_left {
-    width: 150px;
-    height: auto;
+    width: auto;
+    height: 160px;
     z-index: 0;
-    position: absolute;
-    top: 255%;
+    position: relative;
+    top: 30px;
   }
   .right_site {
     height: 240px;
@@ -1886,6 +1887,7 @@ footer {
   .special_offer {
     margin-top: 200px;
     width: 300px;
+    margin-top: 50px;
     margin-bottom: 100px;
     flex-direction: column;
   }
@@ -1897,11 +1899,11 @@ footer {
     height: auto;
   }
   .iphone_left {
-    width: 150px;
-    height: auto;
+    width: auto;
+    height: 100px;
     z-index: 0;
-    position: absolute;
-    top: 243%;
+    position: relative;
+    top: 30px;
   }
   .right_site {
     height: 240px;
