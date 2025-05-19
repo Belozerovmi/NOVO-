@@ -1742,7 +1742,7 @@ footer {
 
   .photos_sec2 {
     width: 300px;
-    margin-top: 100px;
+    margin-top: 95px;
   }
 
   .sec2 {
@@ -2044,24 +2044,49 @@ footer {
   }
   .img_txt1 {
     position: relative;
-    right: 315px;
-    top: -80px;
+    right: 330px;
+    top: -90px;
   }
 
   .img_txt1 h1 {
     font-family: Manrope;
-    font-weight: 400;
-    font-size: 10px;
+    font-weight: 100;
+    font-size: 14px;
     color: #fff;
     text-align: center;
   }
 
   .img_txt2 {
     position: relative;
-    right: 258px;
+    right: 283px;
+    top: -100px;
+  }
+
+  .img_txt2 h1 {
+    font-family: Manrope;
+    font-weight: 100;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .img_txt3 {
+    position: relative;
+    right: 255px;
     top: -90px;
   }
 
+  .img_txt3 h1 {
+    font-family: Manrope;
+    font-weight: 100;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+  }
+  .about_us_photos {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
   .about_us h2 {
     font-size: 20px;
   }
@@ -2069,32 +2094,7 @@ footer {
   .block span {
     text-align: center;
     text-shadow: none;
-  }
-
-  .about_us_photos {
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-  .img_txt2 h1 {
-    font-family: Manrope;
-    font-weight: 400;
     font-size: 12px;
-    color: #fff;
-    text-align: center;
-  }
-
-  .img_txt3 {
-    position: relative;
-    right: 215px;
-    top: -80px;
-  }
-
-  .img_txt3 h1 {
-    font-family: Manrope;
-    font-weight: 400;
-    font-size: 10px;
-    color: #fff;
-    text-align: center;
   }
 }
 
