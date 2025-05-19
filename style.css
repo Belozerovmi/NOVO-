@@ -1782,6 +1782,7 @@ footer {
     gap: 20px;
     padding: 10px;
     justify-content: center;
+    width: 300px;
   }
 
   .block-3,
