@@ -787,8 +787,8 @@ footer {
 @media (min-width: 1024px) and (max-width: 1279px) {
   .bg_photo1 {
     background-size: 110%;
-    background-position: -70% 90%;
-    height: 550px;
+    background-position: -70% 100%;
+    height: 450px;
     width: 107%;
   }
   .wrapper1 {
@@ -1110,7 +1110,7 @@ footer {
   .header {
     margin-top: 32px;
     margin-bottom: 32px;
-    width: 600px;
+    width: 700px;
 
     display: flex;
     row-gap: 15px;
@@ -1220,8 +1220,8 @@ footer {
 
   .img_txt1 {
     position: relative;
-    right: 123%;
-    top: -215px;
+    right: 110%;
+    top: -190px;
   }
 
   .img_txt1 h1 {
@@ -1234,8 +1234,8 @@ footer {
 
   .img_txt2 {
     position: relative;
-    right: 555px;
-    top: -240px;
+    right: 530px;
+    top: -215px;
   }
 
   .img_txt2 h1 {
@@ -1249,7 +1249,7 @@ footer {
   .img_txt3 {
     position: relative;
     right: 360px;
-    top: -215px;
+    top: -190px;
   }
 
   .img_txt3 h1 {
@@ -1273,5 +1273,823 @@ footer {
   .menu img {
     width: 32px;
     height: auto;
+  }
+}
+
+/* Крупные мобильные / маленькие планшеты */
+@media (min-width: 479px) and (max-width: 767px) {
+  .bg_photo1 {
+    background-size: 110%;
+    background-position: -70% 90%;
+    height: 360px;
+    width: 90px;
+  }
+  .enter_btn {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  .header {
+    width: 450px;
+  }
+
+  .header_btns {
+    display: none;
+  }
+  .menu img {
+    width: 32px;
+    height: auto;
+  }
+
+  .bg_photo1 {
+    background: linear-gradient(
+          to top,
+          rgba(20, 20, 22, 1) 0%,
+          rgba(0, 0, 0, 0)
+        )
+        50%,
+      url("images/page_1_bg.jpg") no-repeat;
+    background-size: 180%;
+    background-position: 70% 95%;
+    height: 360px;
+
+    width: 100%;
+  }
+  .wrapper1 {
+    width: 479px;
+  }
+
+  .wrapper2 {
+    width: 450px;
+  }
+  .first_img img {
+    width: 450px;
+  }
+
+  .first_img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .photos_sec2 {
+    width: 450px;
+    margin-top: 100px;
+  }
+
+  .sec2 {
+    height: auto;
+  }
+
+  .block-1 {
+    transform: translateY(-20px);
+  }
+  .block-2 {
+    transform: translateY(0px);
+  }
+  .block-3 {
+    transform: translateY(-20px);
+  }
+  .block-4 {
+    transform: translateY(0px);
+  }
+
+  .block {
+    width: 100px;
+    height: 155px;
+  }
+  .block span {
+    font-size: 14px;
+  }
+
+  .sec3_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stepped-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос */
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .block-3,
+  .block-4 {
+    order: 1; /* Опционально: меняет порядок */
+  }
+
+  .sec3_txt h1 {
+    font-weight: 400;
+    font-size: 28px;
+    max-width: 479px;
+  }
+
+  .cards_special {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page_1_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 470px;
+    margin-top: 200px;
+  }
+
+  .page_1_txt p {
+    font-size: 16px;
+  }
+
+  .page_1_txt h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .page_1_txt a {
+    width: auto;
+  }
+
+  .page_1_btn {
+    font-size: 12px;
+    padding: 14px 22px 14px 22px;
+  }
+
+  .about_us p {
+    font-size: 16px;
+  }
+
+  .about_us h2 {
+    text-align: center;
+    font-size: 32px;
+    width: 479px;
+  }
+
+  .cards_special {
+    gap: 50px;
+  }
+  .crd h4 {
+    color: rgba(0, 150, 97, 1);
+    font-weight: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .crd h1 {
+    margin-top: 8px;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+  .crd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    height: 250px;
+  }
+
+  .circle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .circl3 {
+    width: 50px;
+  }
+
+  .circl2 {
+    width: 45px;
+  }
+
+  .circl1 {
+    width: 25px;
+  }
+  .arrow {
+    border-radius: 100%;
+    padding: 12px 16px;
+    margin-top: 10px;
+  }
+
+  .special_offer {
+    margin-top: 200px;
+    width: 479px;
+    margin-bottom: 100px;
+    flex-direction: column;
+  }
+  .sec3 {
+    height: auto;
+  }
+  .iphone_left img {
+    width: 150px;
+    height: auto;
+  }
+  .iphone_left {
+    width: 150px;
+    height: auto;
+    z-index: 0;
+    position: absolute;
+    top: 255%;
+  }
+  .right_site {
+    height: 240px;
+    width: 300px;
+    z-index: 1;
+    border-radius: 8px;
+  }
+
+  .right_site_txt {
+    width: 230px;
+    text-align: center;
+  }
+
+  .right_site_txt h1 {
+    width: 220px;
+    font-size: 14px;
+  }
+
+  .right_site_txt p {
+    width: 220px;
+    font-size: 12px;
+  }
+  .r_site_btn {
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 8px 15px 8px 15px;
+  }
+
+  .right_site_txt a {
+    display: inline-block;
+    width: 145px;
+  }
+  .flex_step1,
+  .flex_step2,
+  .flex_step3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    gap: 20px;
+    text-align: center;
+  }
+  .photo img {
+    width: 300px;
+    height: auto;
+  }
+
+  .bluedot {
+    position: relative;
+    left: -400px;
+    top: -77px;
+  }
+  .bluedot img,
+  .bluedot2 img {
+    width: 20px;
+  }
+
+  .bluedot2 {
+    position: relative;
+    left: -57%;
+    top: -87px;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgb(47, 47, 52);
+    width: 380px;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .footer_inner {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос */
+    justify-content: flex-start;
+
+    width: 380px;
+  }
+
+  .footer_for_buyer,
+  .footer_soc_media {
+    order: 1; /* Опционально: меняет порядок */
+  }
+
+  .btns_for_user {
+    gap: 5px;
+    flex-direction: column;
+    top: 5px;
+  }
+  .wrapper4 h1 {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 33px;
+    margin-top: 70px;
+  }
+
+  .sec3_txt h1 {
+    font-size: 24px;
+  }
+
+  .sec3_txt p {
+    font-family: Manrope;
+    font-weight: 200;
+    font-size: 16px;
+  }
+  .sec3_txt {
+    margin-top: 80px;
+  }
+  .sec4_button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .footer_for_buyer {
+    margin-right: 100px;
+  }
+
+  .footer_NOVO {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  footer {
+    height: auto;
+  }
+  .img_txt1 {
+    position: relative;
+    right: 104%;
+    top: -110px;
+  }
+
+  .img_txt1 h1 {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .img_txt2 {
+    position: relative;
+    right: 368px;
+    top: -125px;
+  }
+
+  .about_us h2 {
+    font-size: 20px;
+  }
+
+  .block span {
+    text-align: center;
+    text-shadow: none;
+  }
+
+  .about_us_photos {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .img_txt2 h1 {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .img_txt3 {
+    position: relative;
+    right: 275px;
+    top: -110px;
+  }
+
+  .img_txt3 h1 {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    text-align: center;
+  }
+}
+
+/* Смартфоны */
+@media (min-width: 320px) and (max-width: 479px) {
+  .enter_btn {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+
+  .header {
+    width: 300px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+  .header_btns {
+    display: none;
+  }
+  .menu img {
+    width: 32px;
+    height: auto;
+  }
+
+  .bg_photo1 {
+    background: linear-gradient(
+          to top,
+          rgba(20, 20, 22, 1) 0%,
+          rgba(0, 0, 0, 0)
+        )
+        50%,
+      url("images/page_1_bg.jpg") no-repeat;
+    background-size: 180%;
+    background-position: 70% 95%;
+    height: 360px;
+    width: 100%;
+  }
+  .wrapper1 {
+    width: auto;
+  }
+
+  .wrapper2 {
+    width: auto;
+  }
+
+  .wrapper3 {
+    width: auto;
+  }
+
+  .wrapper4 {
+    text-align: center;
+  }
+
+  .first_img img {
+    width: 300px;
+  }
+
+  .first_img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .photos_sec2 {
+    width: 300px;
+    margin-top: 100px;
+  }
+
+  .sec2 {
+    height: auto;
+  }
+
+  .block-1 {
+    transform: translateY(-20px);
+  }
+  .block-2 {
+    transform: translateY(0px);
+  }
+  .block-3 {
+    transform: translateY(-20px);
+  }
+  .block-4 {
+    transform: translateY(0px);
+  }
+
+  .block {
+    width: 80px;
+    height: 130px;
+  }
+  .block span {
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .sec3_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stepped-container {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос */
+    gap: 20px;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .block-3,
+  .block-4 {
+    order: 1; /* Опционально: меняет порядок */
+  }
+
+  .sec3_txt h1 {
+    font-weight: 400;
+    font-size: 20px;
+    width: 300px;
+  }
+
+  .cards_special {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .page_1_txt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    margin-top: 200px;
+  }
+
+  .page_1_txt p {
+    font-size: 16px;
+  }
+
+  .page_1_txt h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  .page_1_txt a {
+    width: auto;
+  }
+
+  .page_1_btn {
+    font-size: 12px;
+    padding: 14px 22px 14px 22px;
+  }
+
+  .about_us p {
+    font-size: 16px;
+  }
+
+  .about_us h2 {
+    text-align: center;
+    font-size: 32px;
+    width: 280px;
+  }
+
+  .cards_special {
+    gap: 50px;
+  }
+  .crd h4 {
+    color: rgba(0, 150, 97, 1);
+    font-weight: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .crd h1 {
+    margin-top: 8px;
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 8px;
+  }
+
+  .crd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 170px;
+    height: 250px;
+  }
+
+  .circle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .circl3 {
+    width: 50px;
+  }
+
+  .circl2 {
+    width: 45px;
+  }
+
+  .circl1 {
+    width: 25px;
+  }
+  .arrow {
+    border-radius: 100%;
+    padding: 12px 16px;
+    margin-top: 10px;
+  }
+
+  .special_offer {
+    margin-top: 200px;
+    width: 300px;
+    margin-bottom: 100px;
+    flex-direction: column;
+  }
+  .sec3 {
+    height: auto;
+  }
+  .iphone_left img {
+    width: 150px;
+    height: auto;
+  }
+  .iphone_left {
+    width: 150px;
+    height: auto;
+    z-index: 0;
+    position: absolute;
+    top: 243%;
+  }
+  .right_site {
+    height: 240px;
+    width: 300px;
+    z-index: 1;
+    border-radius: 8px;
+  }
+
+  .flex_sec4 {
+    width: auto;
+    margin-top: 30px;
+  }
+
+  .right_site_txt {
+    width: 230px;
+    text-align: center;
+  }
+
+  .right_site_txt h1 {
+    width: 220px;
+    font-size: 14px;
+  }
+
+  .right_site_txt p {
+    width: 220px;
+    font-size: 12px;
+  }
+  .r_site_btn {
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 8px;
+    padding: 8px 15px 8px 15px;
+  }
+
+  .right_site_txt a {
+    display: inline-block;
+    width: 145px;
+  }
+  .flex_step1,
+  .flex_step2,
+  .flex_step3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    gap: 20px;
+    text-align: center;
+  }
+  .photo img {
+    width: 300px;
+    height: auto;
+  }
+
+  .bluedot {
+    position: relative;
+    left: -267px;
+    top: -62px;
+  }
+  .bluedot img,
+  .bluedot2 img {
+    width: 13px;
+  }
+
+  .bluedot2 {
+    position: relative;
+    left: -56%;
+    top: -69px;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgb(47, 47, 52);
+    width: 280px;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .footer_inner {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос */
+    justify-content: flex-start;
+
+    width: 280px;
+  }
+
+  .footer_for_buyer,
+  .footer_soc_media {
+    order: 1; /* Опционально: меняет порядок */
+  }
+
+  .footer_for_buyer {
+    margin-bottom: 20px;
+    margin-right: 22px;
+  }
+
+  .flex_soc_media {
+    top: 5px;
+  }
+
+  .btns_for_user {
+    gap: 5px;
+    flex-direction: column;
+    top: 7px;
+  }
+
+  .btns_for_user h4 {
+    font-size: 12px;
+  }
+  .wrapper4 h1 {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
+  .sec3_txt p {
+    font-family: Manrope;
+    font-weight: 200;
+    font-size: 16px;
+  }
+  .sec3_txt {
+    margin-top: 80px;
+  }
+  .sec4_button {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .footer_NOVO {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  footer {
+    height: auto;
+  }
+  .img_txt1 {
+    position: relative;
+    right: 310px;
+    top: -80px;
+  }
+
+  .img_txt1 h1 {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 8px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .img_txt2 {
+    position: relative;
+    right: 245px;
+    top: -90px;
+  }
+
+  .about_us h2 {
+    font-size: 20px;
+  }
+
+  .block span {
+    text-align: center;
+    text-shadow: none;
+  }
+
+  .about_us_photos {
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .img_txt2 h1 {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 10px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .img_txt3 {
+    position: relative;
+    right: 190px;
+    top: -80px;
+  }
+
+  .img_txt3 h1 {
+    font-family: Manrope;
+    font-weight: 400;
+    font-size: 8px;
+    color: #fff;
+    text-align: center;
   }
 }
