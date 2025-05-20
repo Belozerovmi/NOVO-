@@ -92,7 +92,7 @@ phoneInput.addEventListener("input", function (e) {
   let formattedValue = !x[2]
     ? x[1]
     : x[1] +
-      (x[2] ? " (" + x[2] + ")" : "") +
+      (x[2] ? " " + x[2] + " " : "") +
       (x[3] ? " " + x[3] : "") +
       (x[4] ? "-" + x[4] : "") +
       (x[5] ? "-" + x[5] : "");
@@ -155,11 +155,23 @@ document.getElementById("callback").onclick = function () {
   showCustomAlert("Заявка принята!");
 };
 
-setTimeout(() => {
-  const inputs = document.querySelectorAll("input");
-  inputs.forEach((input) => {
-    if (input.matches(":-webkit-autofill")) {
-      input.style.backgroundColor = "transparent";
-    }
+const isTelegram = navigator.userAgent.includes("Telegram");
+
+if (isTelegram) {
+  document.addEventListener("DOMContentLoaded", () => {
+    const inputs = document.querySelectorAll("input");
+
+    inputs.forEach((input) => {
+      // Принудительный рефреш стилей
+      input.style.setProperty("background-color", "transparent", "important");
+
+      // Дополнительный фикс для темной темы
+      input.style.setProperty("color", "inherit", "important");
+
+      // Обработчик для динамических изменений
+      input.addEventListener("input", () => {
+        input.style.backgroundColor = "transparent";
+      });
+    });
   });
-}, 100);
+}
