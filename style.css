@@ -549,6 +549,10 @@ li {
 input {
   color: white;
 }
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  background-color: transparent !important;
+}
 
 input:focus {
   border-color: rgb(255, 255, 255); /* Или любой другой цвет */
