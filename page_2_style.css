@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* scroll-behavior: smooth; */
+  scroll-behavior: smooth;
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
@@ -166,6 +166,12 @@
   border-radius: 5px;
   width: 400px;
   height: 55px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.input_data:focus {
+  outline: 1px solid rgb(208, 208, 208);
 }
 
 .account_reg {
@@ -195,10 +201,6 @@
   row-gap: 30px;
   justify-content: space-between;
   margin-bottom: 40px;
-}
-
-input::placeholder {
-  padding: 0px 0px 0px 10px;
 }
 
 .checkbox-input {
@@ -314,6 +316,18 @@ footer {
 }
 
 @media (min-width: 1024px) and (max-width: 1279px) {
+  .header {
+    width: 900px;
+  }
+  .registration_card {
+    width: 800px;
+  }
+  .input_data {
+    border: 1px solid rgba(233, 233, 233, 1);
+    border-radius: 5px;
+    width: 340px;
+    height: 55px;
+  }
   .copyright {
     width: 1000px;
   }
@@ -325,6 +339,25 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
+  .header {
+    width: 700px;
+  }
+
+  .link_enter {
+    background-color: rgba(0, 150, 97, 1);
+    padding: 12px 28px;
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+  }
+  .registration_card {
+    width: 700px;
+  }
+  .input_data {
+    border: 1px solid rgba(233, 233, 233, 1);
+    border-radius: 5px;
+    width: 300px;
+    height: 55px;
+  }
   .copyright {
     width: 700px;
     border: 1px dashed rgb(47, 47, 52);
@@ -352,6 +385,56 @@ footer {
 }
 
 @media (min-width: 479px) and (max-width: 767px) {
+  .header {
+    width: 80%;
+  }
+  .lang_money {
+    display: none;
+  }
+
+  .link_enter {
+    background-color: rgba(0, 150, 97, 1);
+    padding: 12px 28px;
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+  }
+
+  .link_enter p {
+    font-size: 12px;
+  }
+
+  .reg_car_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reg_car_txt p {
+    width: 80%;
+  }
+  .registration_card {
+    width: 80%;
+  }
+  .input_data {
+    border: 1px solid rgba(233, 233, 233, 1);
+    border-radius: 5px;
+    width: 100%;
+    height: 55px;
+  }
+
+  .main_logo_for_seller h1 {
+    font-size: 24px;
+  }
+  .contactrs_input_flex,
+  .account_input_flex {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
   .copyright {
     display: flex;
     align-items: center;
@@ -395,6 +478,71 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
+  .header {
+    width: 80%;
+  }
+  .lang_money {
+    display: none;
+  }
+
+  .link_enter {
+    background-color: rgba(0, 150, 97, 1);
+    padding: 12px 14px;
+    border-radius: 5px;
+    transition: all 200ms ease-in-out;
+  }
+
+  .link_enter o {
+    display: none;
+  }
+
+  .link_enter p {
+    font-size: 16px;
+  }
+
+  .reg_car_txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reg_car_txt h1 {
+    font-size: 34px;
+    line-height: 1;
+  }
+
+  .reg_car_txt p {
+    width: 90%;
+    font-size: 14px;
+  }
+  .registration_card {
+    width: 80%;
+    margin-bottom: 80px;
+  }
+  .input_data {
+    border: 1px solid rgba(233, 233, 233, 1);
+    border-radius: 5px;
+    width: 100%;
+    height: 55px;
+  }
+
+  .main_logo_for_seller h1 {
+    font-size: 24px;
+  }
+  .contactrs_input_flex,
+  .account_input_flex {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+
+  .checkbox-label p {
+    font-size: 12px;
+  }
   footer {
     height: auto;
   }
