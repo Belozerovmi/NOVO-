@@ -154,3 +154,12 @@ function showCustomAlert(message) {
 document.getElementById("callback").onclick = function () {
   showCustomAlert("Заявка принята!");
 };
+
+setTimeout(() => {
+  const inputs = document.querySelectorAll("input");
+  inputs.forEach((input) => {
+    if (input.matches(":-webkit-autofill")) {
+      input.style.backgroundColor = "transparent";
+    }
+  });
+}, 100);
