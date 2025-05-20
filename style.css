@@ -927,6 +927,12 @@ footer {
     margin-bottom: 60px;
   }
 
+  .input_pop:active,
+  .input_pop::after {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
   .input_pop {
     width: 200px;
     padding: 30px 20px 7px 0px;
@@ -966,6 +972,13 @@ footer {
     background-position: -70% 100%;
     height: 450px;
     width: 107%;
+  }
+
+  .input_pop:active,
+  .input_pop::after {
+    background-color: transparent;
+    outline: none;
+    border: none;
   }
 
   .pop_up_body {
@@ -1195,7 +1208,12 @@ footer {
     height: 360px;
     width: 100%;
   }
-
+  .input_pop:active,
+  .input_pop::after {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
   .pop_up_body {
     width: 500px;
     height: auto;
@@ -1492,6 +1510,13 @@ footer {
     background-position: -70% 90%;
     height: 360px;
     width: 90px;
+  }
+
+  .input_pop:active,
+  .input_pop::after {
+    background-color: transparent;
+    outline: none;
+    border: none;
   }
 
   .pop_up_body {
@@ -1913,7 +1938,12 @@ footer {
   .enter_btn {
     display: none;
   }
-
+  .input_pop:active,
+  .input_pop::after {
+    background-color: transparent;
+    outline: none;
+    border: none;
+  }
   .pop_up_body {
     width: 80%;
     height: auto;
@@ -2383,3 +2413,5 @@ footer {
     background-color: rgba(0, 150, 97, 1);
   }
 }
+
+/* Дополнительно для мобильных */
