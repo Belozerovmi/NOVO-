@@ -92,7 +92,7 @@ phoneInput.addEventListener("input", function (e) {
   let formattedValue = !x[2]
     ? x[1]
     : x[1] +
-      (x[2] ? " " + x[2] + " " : "") +
+      (x[2] ? " (" + x[2] + ")" : "") +
       (x[3] ? " " + x[3] : "") +
       (x[4] ? "-" + x[4] : "") +
       (x[5] ? "-" + x[5] : "");
@@ -137,16 +137,12 @@ function showCustomAlert(message) {
   alertBox.classList.add("show"); // Добавляем класс для отображения
 
   // Показываем уведомление
-  alertBox.style.visibility = "visible"; // Устанавливаем видимость в "visible"
+  alertBox.style.display = "block";
 
   // Скрываем уведомление через 3 секунды
   setTimeout(() => {
     alertBox.classList.remove("show"); // Убираем класс для скрытия
-
-    // Скрываем элемент после завершения анимации
-    setTimeout(() => {
-      alertBox.style.visibility = "hidden"; // Скрываем элемент
-    }, 500); // 500 миллисекунд соответствует времени анимации
+    alertBox.style.display = "none"; // Скрываем элемент
   }, 3000); // 3000 миллисекунд = 3 секунды
 }
 
@@ -154,24 +150,3 @@ function showCustomAlert(message) {
 document.getElementById("callback").onclick = function () {
   showCustomAlert("Заявка принята!");
 };
-
-const isTelegram = navigator.userAgent.includes("Telegram");
-
-if (isTelegram) {
-  document.addEventListener("DOMContentLoaded", () => {
-    const inputs = document.querySelectorAll("input");
-
-    inputs.forEach((input) => {
-      // Принудительный рефреш стилей
-      input.style.setProperty("background-color", "transparent", "important");
-
-      // Дополнительный фикс для темной темы
-      input.style.setProperty("color", "inherit", "important");
-
-      // Обработчик для динамических изменений
-      input.addEventListener("input", () => {
-        input.style.backgroundColor = "transparent";
-      });
-    });
-  });
-}
