@@ -461,6 +461,28 @@ li {
   height: 403px;
 }
 
+#customAlert {
+  position: fixed;
+  font-size: 24px;
+  top: 20px;
+  right: 20px;
+  background-color: rgba(0, 150, 97, 1); /* Красный цвет для предупреждения */
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  z-index: 1000;
+  opacity: 0; /* Начальная непрозрачность */
+  transform: translateY(-20px); /* Начальная позиция для анимации */
+  transition: all 200ms ease-in-out; /* Плавные переходы для opacity и transform */
+  visibility: hidden; /* Скрываем элемент по умолчанию */
+}
+
+#customAlert.show {
+  opacity: 1; /* Делаем элемент видимым */
+  transform: translateY(0); /* Возвращаем элемент на место */
+  visibility: visible; /* Делаем элемент видимым */
+}
+
 /* POP UP */
 #pop_up {
   width: 100%;
@@ -485,6 +507,9 @@ li {
 }
 
 .pop_up_body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: auto;
   width: 600px;
   height: 680px;
@@ -493,6 +518,45 @@ li {
   box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.15), 0 0 40px 0 rgba(0, 0, 0, 0.1);
   /* spread-значение (-2px) помогает сделать границы мягче */
   background-color: rgb(38, 38, 42);
+}
+
+.pop_up_body h1 {
+  margin-top: 80px;
+  color: #fff;
+  text-align: center;
+  width: 445px;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.pop_up_body p {
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.6;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.input_pop {
+  width: 200px;
+  padding: 30px 20px 7px 0px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 2px rgba(162, 165, 166, 1) solid;
+}
+input {
+  color: white;
+}
+
+input:focus {
+  border-color: rgb(255, 255, 255); /* Или любой другой цвет */
+}
+
+#callback {
+  color: #fff;
+  margin-top: 50px;
 }
 
 .pop_up_close {
@@ -528,7 +592,8 @@ li {
   width: 320px;
 }
 
-.r_site_btn {
+.r_site_btn,
+.pop_up_btn {
   display: inline-block;
   font-size: 16px;
   background-color: rgba(0, 150, 97, 1);
@@ -537,7 +602,8 @@ li {
   transition: all 200ms ease-in-out;
 }
 
-.r_site_btn:hover {
+.r_site_btn:hover,
+.pop_up_btn:hover {
   background-color: #ffffff;
   color: rgba(0, 150, 97, 1);
 }
@@ -828,6 +894,70 @@ footer {
     width: 700px;
     height: 360px;
   }
+  .pop_up_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 600px;
+    height: 680px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.15),
+      0 0 40px 0 rgba(0, 0, 0, 0.1);
+    /* spread-значение (-2px) помогает сделать границы мягче */
+    background-color: rgb(38, 38, 42);
+  }
+
+  .pop_up_body h1 {
+    margin-top: 80px;
+    color: #fff;
+    text-align: center;
+    width: 445px;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+
+  .pop_up_body p {
+    color: #fff;
+    font-size: 16px;
+    opacity: 0.6;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+
+  .input_pop {
+    width: 200px;
+    padding: 30px 20px 7px 0px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px rgba(162, 165, 166, 1) solid;
+  }
+  input {
+    color: white;
+  }
+
+  input:focus {
+    border-color: rgb(255, 255, 255); /* Или любой другой цвет */
+  }
+
+  #callback {
+    color: #fff;
+    margin-top: 50px;
+  }
+
+  .pop_up_close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 28px;
+    line-height: 0.8;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 100;
+  }
 }
 /* Планшеты (горизонтальная ориентация) и маленькие ноутбуки */
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -837,6 +967,23 @@ footer {
     height: 450px;
     width: 107%;
   }
+
+  .pop_up_body {
+    width: 500px;
+    height: auto;
+  }
+  .pop_up_body p {
+    margin-bottom: 30px;
+  }
+
+  .pop_up_body h1 {
+    margin-top: 40px;
+  }
+
+  #callback {
+    margin-bottom: 40px;
+  }
+
   .wrapper1 {
     width: 1024px;
   }
@@ -1047,6 +1194,22 @@ footer {
     background-position: -70% 90%;
     height: 360px;
     width: 100%;
+  }
+
+  .pop_up_body {
+    width: 500px;
+    height: auto;
+  }
+  .pop_up_body p {
+    margin-bottom: 30px;
+  }
+
+  .pop_up_body h1 {
+    margin-top: 40px;
+  }
+
+  #callback {
+    margin-bottom: 40px;
   }
   .wrapper1 {
     width: 768px;
@@ -1330,6 +1493,26 @@ footer {
     height: 360px;
     width: 90px;
   }
+
+  .pop_up_body {
+    width: 400px;
+    height: auto;
+    z-index: 10;
+  }
+  .pop_up_body p {
+    margin-bottom: 0;
+    font-size: 13px;
+    width: 270px;
+  }
+
+  .pop_up_body h1 {
+    font-size: 32px;
+    margin-top: 40px;
+  }
+
+  #callback {
+    margin-bottom: 40px;
+  }
   .enter_btn {
     display: none;
   }
@@ -1563,7 +1746,8 @@ footer {
     width: 220px;
     font-size: 12px;
   }
-  .r_site_btn {
+  .r_site_btn,
+  .pop_up_btn {
     display: inline-block;
     font-size: 14px;
     border-radius: 8px;
@@ -1728,6 +1912,31 @@ footer {
 @media (min-width: 320px) and (max-width: 479px) {
   .enter_btn {
     display: none;
+  }
+
+  .pop_up_body {
+    width: 80%;
+    height: auto;
+    z-index: 10;
+  }
+  .pop_up_body p {
+    margin-bottom: 0;
+    font-size: 13px;
+    width: 70%;
+  }
+
+  .pop_up_body h1 {
+    width: 80%;
+    font-size: 24px;
+    margin-top: 40px;
+  }
+
+  .pop_up_close {
+    font-size: 18px;
+  }
+
+  #callback {
+    margin-bottom: 40px;
   }
   .menu {
     display: block;
@@ -1977,7 +2186,8 @@ footer {
     width: 220px;
     font-size: 12px;
   }
-  .r_site_btn {
+  .r_site_btn,
+  .pop_up_btn {
     display: inline-block;
     font-size: 14px;
     border-radius: 8px;
@@ -2146,14 +2356,14 @@ footer {
 @media (min-width: 320px) and (max-width: 1279px) {
   .page_1_btn:hover,
   .r_site_btn:hover,
-  .sec4_btn:hover {
+  .sec4_btn:hover .pop_up_btn {
     color: #ffffff;
     background-color: rgba(0, 150, 97, 1);
   }
 
   .page_1_btn:active,
   .r_site_btn:active,
-  .sec4_btn:active {
+  .sec4_btn:active .pop_up_btn:active {
     color: rgba(0, 150, 97, 1);
     background-color: #fff;
   }
