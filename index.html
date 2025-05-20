@@ -218,20 +218,22 @@
                   <p>Впишите свои данные и мы перезвоним вам <br>
                     для создания личного тарифного плана</p>
                   
-                  <input class="input_name_input input_pop" type="text" name="name" id="nameInput" placeholder="Ваше имя" value="">
+                  <input class="input_name_input input_pop" type="text" name="name"  autocomplete="off" id="nameInput" placeholder="Ваше имя" value="">
                   <p id="nameErrorText" style="display:none; color:red; margin: 0;">Неверное имя</p>
                   <!-- имя -->
-                  <input class="input_mail_input input_pop" id="emailInput" type="email" name="mail" id="mail" placeholder="E-mail адрес" value="">
+                  <input class="input_mail_input input_pop" id="emailInput" type="email" autocomplete="off" name="mail" id="mail" placeholder="E-mail адрес" value="">
                   <p id="errorText" style="color: red; display: none; margin: 0;">Некорректный email</p>
                   <!-- e-mail -->
-                  <input class="input_phone_num_input input_pop" type="tel" name="phone_num" id="phoneInput" placeholder="Номер телефона" pattern="\+?[0-9\s\-\(\)]+ value="">
+                  <input class="input_phone_num_input input_pop" type="tel" name="phone_num" autocomplete="off" id="phoneInput" placeholder="Номер телефона" pattern="\+?[0-9\s\-\(\)]+ value="">
                   <p id="phoneErrorText" style="color: red; display: none; margin: 0; padding: 0;">Некорректный номер телефона</p>
                   <!-- номер телефона -->
                    <a href="" id="callback">
                 <h2 class="pop_up_btn">ПЕРЕЗВОНИТЕ МНЕ</h2>
               </a>
               
-                  <div id="pop_up_close" class="pop_up_close">&#10006</div>
+                  <div id="pop_up_close" class="pop_up_close">
+                    &#10006
+                  </div>
                 </div>
               </div>
             </div>
