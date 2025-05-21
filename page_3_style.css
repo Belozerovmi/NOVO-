@@ -264,8 +264,9 @@
   padding: 20px 0px 20px 0px;
   border-top: 1px solid rgba(232, 233, 232, 1);
   display: flex;
-  align-items: baseline;
+  align-items: center;
   justify-content: space-between;
+  height: 20px;
 }
 
 .car-cost-geo h1 {
@@ -293,8 +294,9 @@
 }
 
 .car-info-flex p {
-  background-color: rgba(139, 149, 158, 0.05);
+  background-color: rgb(0 0 0 / 6%);
   padding: 3px 8px 3px 8px;
+  border-radius: 4px;
 }
 
 .car-info h3 {
@@ -368,6 +370,7 @@ footer {
   width: 1200px;
   justify-content: space-around;
   margin-bottom: 70px;
+  gap: 10px;
 }
 
 .footer_NOVO h1 {
@@ -421,20 +424,28 @@ footer {
   font-size: 14px;
   opacity: 0.6;
 }
+.footer_soc_media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .flex_soc_media {
   display: flex;
   gap: 12px;
   position: relative;
   top: 20px;
+  align-items: center;
 }
-
+.logo3 {
+  width: 30px;
+}
 .logo2 {
-  width: 33px;
-  height: 33px;
+  width: 31px;
+  height: auto;
 }
 
 .logo1 {
-  width: 32px;
+  width: 28px;
 }
 .soc_logo {
   transition: all 200ms ease-in-out;
@@ -451,6 +462,12 @@ footer {
   border: 2px dashed rgb(47, 47, 52);
   width: 1200px;
   height: 55px;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .copyright p {
   color: #fff;
@@ -466,10 +483,84 @@ footer {
 .var_short_txt o {
   display: none;
 }
+.action-buttons {
+  display: none; /* Скрываем кнопки по умолчанию */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили кнопок */
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.edit-btn {
+  background-color: rgba(0, 150, 97, 0.1);
+  color: rgba(0, 150, 97, 1);
+}
+
+.edit-btn:hover {
+  background-color: rgba(0, 150, 97, 0.185);
+}
+
+.delete-btn {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.delete-btn:hover {
+  background-color: #ffcdd2aa;
+}
+.car-card:hover .action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.car-card:hover .car-cost-geo p,
+.car-card:hover .car-cost-geo h1 {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .car-card:hover .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    gap: 8px;
+  }
+
+  .car-card:hover .car-cost-geo p,
+  .car-card:hover .car-cost-geo h1 {
+    display: none;
+  }
+
+  .car-grid {
+    width: 100%;
+  }
+}
+
 @media (min-width: 1024px) and (max-width: 1279px) {
   .header,
   .header2 {
     width: 80%;
+  }
+  .car-card:hover .action-buttons {
+    display: none;
+  }
+
+  .car-card:hover .car-cost-geo p,
+  .car-card:hover .car-cost-geo h1 {
+    display: block;
   }
 
   .search_block_inner {
@@ -477,7 +568,7 @@ footer {
   }
 
   .car-grid {
-    width: 900px;
+    width: 80%;
   }
 
   .copyright {
@@ -550,6 +641,17 @@ footer {
   }
   .header2_menu a:after {
     height: 0px; /* Высота линии */
+  }
+  .car-card:hover .action-buttons {
+    display: none;
+  }
+
+  .car-card:hover .car-cost-geo p,
+  .car-card:hover .car-cost-geo h1 {
+    display: block;
+  }
+  .car-grid {
+    width: 80%;
   }
 }
 
@@ -631,6 +733,8 @@ footer {
 
   .car-grid {
     padding: 0;
+    grid-template-columns: 1fr;
+    width: 100%;
   }
   .car-card-link {
     display: flex;
@@ -699,6 +803,14 @@ footer {
   .header2_menu a:after {
     height: 0px; /* Высота линии */
   }
+  .car-card:hover .action-buttons {
+    display: none;
+  }
+
+  .car-card:hover .car-cost-geo p,
+  .car-card:hover .car-cost-geo h1 {
+    display: block;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
@@ -710,6 +822,7 @@ footer {
     width: 80%;
     margin: auto;
   }
+
   footer {
     height: auto;
   }
@@ -843,5 +956,18 @@ footer {
 
   .header2_menu a:after {
     height: 0px; /* Высота линии */
+  }
+  .car-card:hover .action-buttons {
+    display: none;
+  }
+
+  .car-card:hover .car-cost-geo p,
+  .car-card:hover .car-cost-geo h1 {
+    display: block;
+  }
+
+  .car-cost-geo p,
+  .car-cost-geo h1 {
+    font-size: 14px;
   }
 }

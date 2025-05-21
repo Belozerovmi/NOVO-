@@ -88,7 +88,7 @@ li {
 
 .wrapper1 {
   display: flex;
-  width: 100%;
+  width: 77%;
   margin-bottom: 90px;
 }
 
@@ -423,7 +423,6 @@ li {
 }
 
 .crd {
-  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -751,7 +750,7 @@ footer {
 
 .footer_NOVO p {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.6;
 }
 
@@ -800,15 +799,24 @@ footer {
   gap: 12px;
   position: relative;
   top: 20px;
+  align-items: center;
+}
+.logo3 {
+  width: 28px;
+}
+.logo2 {
+  width: 31px;
+  height: auto;
 }
 
-.logo2 {
-  width: 33px;
-  height: 33px;
+.footer_soc_media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo1 {
-  width: 32px;
+  width: 28px;
 }
 .soc_logo {
   transition: all 200ms ease-in-out;
@@ -825,6 +833,12 @@ footer {
   border: 2px dashed rgb(47, 47, 52);
   width: 1200px;
   height: 55px;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 .copyright p {
   color: #fff;
@@ -865,6 +879,12 @@ footer {
 
 /*------- медиазапросы под разные устройства -------*/
 /* Стандартные ноутбуки и десктопы */
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+  .bg_photo1 {
+    height: 500px;
+  }
+}
 @media (min-width: 1280px) and (max-width: 1439px) {
   .bg_photo1 {
     background-size: 110%;
