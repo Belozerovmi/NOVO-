@@ -87,7 +87,7 @@
 }
 
 .sec1 {
-  background-color: rgb(249, 249, 249);
+  background-color: rgba(219, 219, 219, 0.904);
   width: 100%;
 }
 
@@ -168,6 +168,7 @@
   height: 55px;
   box-sizing: border-box;
   padding-left: 10px;
+  font-size: 20px;
 }
 
 .input_data:focus {
@@ -205,6 +206,7 @@
 
 .checkbox-input {
   width: initial;
+  cursor: pointer;
 }
 /* FOOTER SECTION */
 footer {
@@ -385,8 +387,12 @@ footer {
 }
 
 @media (min-width: 479px) and (max-width: 767px) {
+  .header_sec1 {
+    height: 70px;
+  }
   .header {
     width: 80%;
+    margin: auto;
   }
   .lang_money {
     display: none;
@@ -415,6 +421,8 @@ footer {
   }
   .registration_card {
     width: 80%;
+    margin-top: 40px;
+    margin-bottom: 40px;
   }
   .input_data {
     border: 1px solid rgba(233, 233, 233, 1);
@@ -478,8 +486,12 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 479px) {
+  .header_sec1 {
+    height: 60px;
+  }
   .header {
     width: 80%;
+    margin: auto;
   }
   .lang_money {
     display: none;
@@ -487,7 +499,7 @@ footer {
 
   .link_enter {
     background-color: rgba(0, 150, 97, 1);
-    padding: 12px 14px;
+    padding: 8px 14px;
     border-radius: 5px;
     transition: all 200ms ease-in-out;
   }
@@ -517,8 +529,9 @@ footer {
     font-size: 14px;
   }
   .registration_card {
+    margin-top: 40px;
     width: 80%;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
   }
   .input_data {
     border: 1px solid rgba(233, 233, 233, 1);
