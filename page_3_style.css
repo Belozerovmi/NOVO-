@@ -175,7 +175,6 @@
   display: flex;
   gap: 5px;
   margin-bottom: 50px;
-  
 }
 
 .count_of_used h3 {
@@ -290,10 +289,11 @@
   display: flex;
   gap: 5px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .car-info-flex p {
-  background-color: rgba(110, 119, 128, 0.281);
+  background-color: rgba(139, 149, 158, 0.05);
   padding: 3px 8px 3px 8px;
 }
 
@@ -337,15 +337,15 @@
   justify-content: center;
 }
 
-.search_block{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.search_block {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.search_block_inner{
+.search_block_inner {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -459,12 +459,11 @@ footer {
   font-weight: 100;
 }
 
-.menu_icons{
+.menu_icons {
   display: none;
 }
 
-
-.var_short_txt o{
+.var_short_txt o {
   display: none;
 }
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -475,11 +474,11 @@ footer {
 
   .search_block_inner {
     width: 80%;
-}
+  }
 
-.car-grid{
+  .car-grid {
     width: 900px;
-}
+  }
 
   .copyright {
     width: 1000px;
@@ -492,8 +491,7 @@ footer {
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-
-  .my_posts h1{
+  .my_posts h1 {
     font-size: 50px;
   }
   .header,
@@ -503,34 +501,27 @@ footer {
 
   .search_block_inner {
     width: 80%;
-}
+  }
 
-.link_enter p, o{
-  font-size: 12px;
-}
+  .link_enter p,
+  o {
+    font-size: 12px;
+  }
 
-.header_2_ul {
-  gap: 40px;
-}
+  .header_2_ul {
+    margin-bottom: 10px;
+    gap: 40px;
+  }
 
-.link_enter{
-  padding: 12px 18px;
-}
+  .link_enter {
+    padding: 12px 18px;
+  }
 
-.link_enter_2{
-  padding: 12px 18px;
-}
+  .link_enter_2 {
+    padding: 12px 18px;
+  }
 
-.var_txt p{
-  display:none;
-}
-
-.var_txt img{
-  display: block;
-  width: 22px;
-}
-
-  .header2_menu p{
+  .header2_menu p {
     font-size: 14px;
   }
   .copyright {
@@ -557,30 +548,33 @@ footer {
     position: relative;
     top: 20px;
   }
+  .header2_menu a:after {
+    height: 0px; /* Высота линии */
+  }
 }
 
 @media (min-width: 479px) and (max-width: 767px) {
-
-  .main_logo_for_seller h1{
+  .main_logo_for_seller h1 {
     font-size: 18px;
   }
-  .link_enter p, o{
+  .link_enter p,
+  o {
     font-size: 12px;
   }
 
-  .my_posts h1{
+  .my_posts h1 {
     font-size: 30px;
   }
 
-  .my_posts{
+  .my_posts {
     margin-bottom: 20px;
   }
 
-  .link_enter{
+  .link_enter {
     padding: 12px 18px;
   }
 
-  .link_enter_2{
+  .link_enter_2 {
     padding: 12px 18px;
   }
   .header_sec1 {
@@ -592,59 +586,59 @@ footer {
     margin: auto;
   }
 
-  .add-button{
+  .add-button {
     padding: 0px 10px;
   }
-  
-.link_enter p{
-  font-size: 12px;
-}
 
-.link_enter o{
-  display: none;
-}
+  .link_enter p {
+    font-size: 12px;
+  }
 
-.header_2_ul {
-  gap: 25px;
-}
+  .link_enter o {
+    display: none;
+  }
 
-.link-ease-in-out p {
-  padding-bottom: 5px;
-  font-size: 13px;
-}
+  .header_2_ul {
+    margin-bottom: 10px;
+    gap: 25px;
+  }
 
+  .link-ease-in-out p {
+    padding-bottom: 5px;
+    font-size: 13px;
+  }
 
-.link_enter{
-  padding: 12px 18px;
-}
+  .link_enter {
+    padding: 12px 18px;
+  }
 
-.var_txt p{
-  display:none;
-}
+  .var_txt p {
+    display: none;
+  }
 
-.var_txt img{
-  display: block;
-  width: 22px;
-}
+  .var_txt img {
+    display: block;
+    width: 22px;
+  }
 
-.wrapper3{
-  margin-top: 20px;
-}
+  .wrapper3 {
+    margin-top: 20px;
+  }
 
-.count_of_used {
-   margin-bottom: 20px;
-}
+  .count_of_used {
+    margin-bottom: 20px;
+  }
 
-.car-grid{
-  padding: 0;
-}
-.car-card-link{
-  display: flex;
-  justify-content: center;
-}
-.car-card{
-  width: 80%;
-}
+  .car-grid {
+    padding: 0;
+  }
+  .car-card-link {
+    display: flex;
+    justify-content: center;
+  }
+  .car-card {
+    width: 80%;
+  }
 
   .search_input {
     border: none;
@@ -654,10 +648,10 @@ footer {
     box-sizing: border-box;
     padding-left: 10px;
     font-size: 20px;
-}
-.search_block_inner {
-  width: 80%;
-}
+  }
+  .search_block_inner {
+    width: 80%;
+  }
   .copyright {
     display: flex;
     align-items: center;
@@ -698,8 +692,12 @@ footer {
     height: auto;
   }
 
-  .lang_money{
+  .lang_money {
     display: none;
+  }
+
+  .header2_menu a:after {
+    height: 0px; /* Высота линии */
   }
 }
 
@@ -765,68 +763,85 @@ footer {
     display: none;
   }
 
-  .link_enter{
-    padding: 5px 20px ;
+  .link_enter {
+    padding: 5px 20px;
   }
 
-  .lang_money{
+  .lang_money {
     display: none;
   }
-  .var_txt p{
-    display:none;
+  .var_txt p {
+    display: none;
   }
-  
-  .var_txt img{
+
+  .var_txt img {
     display: block;
     width: 22px;
   }
 
-  .input-with-button{
+  .input-with-button {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
   }
-  .search_input{
+  .search_input {
     width: 100%;
   }
 
-  .add-button{
+  .add-button {
     width: 100%;
     height: 55px;
   }
 
-  .header_2_ul{
+  .header_2_ul {
+    margin-bottom: 10px;
     gap: 20px;
     align-items: normal;
   }
   .my_posts h1 {
     font-size: 30px;
-}
+  }
 
-.main_logo_for_seller h1{
-  font-size: 20px;
-}
+  .my_posts {
+    margin: 24px 0px;
+  }
 
-.link-ease-in-out p{
-  font-size: 10PX;
-}
+  .main_logo_for_seller h1 {
+    font-size: 20px;
+  }
 
-.var_short_txt o{
-  display: block;
-}
-.var_short_txt p{
-  display: none;
-}
-.search_block_inner {
-  width: 80%;
-}
+  .link-ease-in-out p {
+    font-size: 10px;
+  }
 
-.count_of_used h3{
-  font-size: 20px;
-}
-.count_of_used {
-  align-items: baseline;
-  margin-bottom: 20px;
-}
+  .var_short_txt o {
+    display: block;
+  }
+  .var_short_txt p {
+    display: none;
+  }
+  .search_block_inner {
+    width: 80%;
+  }
 
+  .count_of_used h3 {
+    font-size: 19px;
+  }
+
+  .count_of_used h2 {
+    font-size: 20px;
+  }
+  .count_of_used {
+    align-items: baseline;
+    margin-bottom: 40px;
+  }
+
+  .car-grid {
+    padding: 0;
+  }
+
+  .header2_menu a:after {
+    height: 0px; /* Высота линии */
+  }
 }
