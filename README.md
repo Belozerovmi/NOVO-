@@ -1,1 +1,2 @@
-#i made this site for practice in my college
+> [!NOTE]
+> В данный момент сайт находится в разработке. Могут вохникать 
