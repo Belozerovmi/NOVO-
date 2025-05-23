@@ -153,9 +153,9 @@
         <div class="account_settings">
            <!-- начало первого аккордеона -->
             <div class="first_accor">
-              <details open>
+              <details id="myDetails" open>
             <summary>
-              Настройки аккаунта <button class="toggle-button">></button>
+              Настройки аккаунта <button id="accord_btn" class="toggle-button">></button>
             </summary>
             <div class="accord-settings">
                 <div class="your_email">
@@ -184,8 +184,8 @@
           
            <!-- конец первого аккордеона -->
                 <!-- начало второго аккордеона -->
-                 <details open>
-                  <summary>Изменить контактную информацию <button class="toggle-button">></button></summary>
+                 <details id="myDetails2" open>
+                  <summary>Изменить контактную информацию <button id="accord_btn2" class="toggle-button">></button></summary>
                    <div class="accord-settings">
                     
                     <div class="text_edit_info_about_company">
@@ -220,8 +220,8 @@
                  </details>
                 <!-- конец второго аккордеона -->
                 <!-- начало третьего аккордеона -->
-                 <details open>
-                  <summary>Изменить описание компании <button class="toggle-button">></button></summary>
+                 <details id="myDetails3" open>
+                  <summary>Изменить описание компании <button id="accord_btn3" class="toggle-button">></button></summary>
                   <div class="accord-settings">
                       <div class="text_edit_discription_about_company">
                       <p>Опишите вашу компанию. Эта информация будет показана на странице продавца </p>
@@ -264,6 +264,32 @@
         </div>
       </div>
     </div>
+
+    <script>
+    document.getElementById('accord_btn').addEventListener('click', function(event) {
+        event.preventDefault(); // предотвращаем стандартное поведение
+        const details = document.getElementById('myDetails');
+        if (details) {
+            details.open = !details.open; // переключаем состояние open
+        }
+    });
+
+    document.getElementById('accord_btn2').addEventListener('click', function(event) {
+        event.preventDefault(); // предотвращаем стандартное поведение
+        const details = document.getElementById('myDetails2');
+        if (details) {
+            details.open = !details.open; // переключаем состояние open
+        }
+    });
+
+    document.getElementById('accord_btn3').addEventListener('click', function(event) {
+        event.preventDefault(); // предотвращаем стандартное поведение
+        const details = document.getElementById('myDetails3');
+        if (details) {
+            details.open = !details.open; // переключаем состояние open
+        }
+    });
+</script>
      <!-- FOOTER SECTION -->
     <footer>
       <div class="footer_inner">
