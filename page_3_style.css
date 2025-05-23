@@ -1,0 +1,973 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* HEADER SECTION */
+.header_sec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+.header {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 1215px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+}
+
+.header_link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.enter_btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.logo h1 {
+  font-family: "inter", sans-serif;
+  color: #000000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.main_logo_for_seller {
+  color: #fff;
+  text-decoration: none;
+}
+
+.lang_money {
+  display: flex;
+  gap: 25px;
+}
+.languages,
+.money {
+  display: flex;
+  align-items: baseline;
+}
+
+.languages svg,
+.money svg {
+  margin-left: 10px;
+  width: 10px;
+  line-height: 0;
+}
+
+.link_enter p,
+.link_enter_2 p {
+  font-weight: bold;
+}
+
+.link_enter,
+.link_enter_2 {
+  background-color: rgba(0, 150, 97, 1);
+  padding: 16px 32px;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.link_enter:hover,
+.link_enter_2:hover {
+  background-color: #ffffff;
+  color: rgba(0, 150, 97, 1);
+  outline: 1px solid rgba(0, 150, 97, 1);
+}
+
+.header_sec2 {
+  border-top: 2px solid rgba(139, 149, 158, 0.074);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+.header2 {
+  margin-top: 32px;
+
+  width: 1215px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000000;
+}
+
+.my_posts h1 {
+  font-family: Manrope;
+  font-weight: bold;
+  font-size: 54px;
+}
+.my_posts {
+  margin-bottom: 40px;
+}
+
+.header_2_ul {
+  display: flex;
+  list-style-type: none;
+  gap: 60px;
+  align-items: center;
+}
+
+.p_in_li p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link-ease-in-out p {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.header2_menu a {
+  display: inline-block;
+  color: #000000; /* Цвет обычной ссылки */
+  line-height: 1;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
+}
+.header2_menu a:after {
+  background-color: rgba(
+    0,
+    150,
+    97,
+    1
+  ); /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 4px; /* Высота линии */
+  width: 0%;
+  transition: 200ms ease-in-out;
+}
+.header2_menu a:hover:after,
+.header2_menu a:focus:after {
+  width: 100%;
+}
+
+.sec3 {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(249, 249, 249);
+  width: 100%;
+}
+
+.wrapper3 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 1215px;
+}
+.count_of_used {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 50px;
+}
+
+.count_of_used h3 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.count_of_used h2 {
+  font-weight: 500;
+  font-size: 24px;
+  color: rgba(0, 150, 97, 1);
+}
+
+.input-with-button {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.search_input {
+  border: none;
+  border-radius: 5px;
+  width: 80%;
+  height: 55px;
+  box-sizing: border-box;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.search_input:focus {
+  outline: 1px solid rgb(208, 208, 208);
+}
+
+.add-button {
+  display: flex;
+  background-color: rgba(0, 150, 97, 1);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease-in-out;
+}
+
+.add-button:hover {
+  border: 1px solid rgba(0, 150, 97, 1);
+  background-color: #fff;
+  color: rgba(0, 150, 97, 1);
+}
+
+.car-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 40px;
+  padding: 40px 0px 40px 0px;
+  width: 90%;
+}
+
+.car-card {
+  border: 1px solid #dddddd86;
+  border-radius: 8px;
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 200ms ease-in-out;
+}
+
+.car-card:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.224);
+}
+
+.car-card-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.car-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.car-cost-geo {
+  padding: 20px 0px 20px 0px;
+  border-top: 1px solid rgba(232, 233, 232, 1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 20px;
+}
+
+.car-cost-geo h1 {
+  font-size: 20px;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.car-cost-geo p {
+  color: #000000;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.car-info {
+  padding: 10px 15px;
+  width: 90%;
+}
+
+.car-info-flex {
+  display: flex;
+  gap: 5px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.car-info-flex p {
+  background-color: rgb(0 0 0 / 6%);
+  padding: 3px 8px 3px 8px;
+  border-radius: 4px;
+}
+
+.car-info h3 {
+  font-size: 1rem;
+  margin-bottom: 12px;
+}
+
+.car-info-flex p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 4px 0;
+}
+
+.car-card img {
+  padding: 20px 20px 20px 20px;
+  width: 90%;
+  border-radius: 25px;
+  height: auto;
+  height: 200px; /* фиксированная высота */
+  object-fit: cover; /* обрезает изображение, сохраняя пропорции и заполняя блок */
+  object-position: center; /* центрирует изображение внутри блока */
+  display: block; /* чтобы убрать нижний отступ у img */
+}
+
+.more_btn {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.more_btn a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.section_with_cards {
+  display: flex;
+  justify-content: center;
+}
+
+.search_block {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search_block_inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/* FOOTER SECTION */
+footer {
+  background-color: rgba(27, 27, 30, 1);
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid rgb(47, 47, 52);
+}
+
+.footer_inner {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  width: 1200px;
+  justify-content: space-around;
+  margin-bottom: 70px;
+  gap: 10px;
+}
+
+.footer_NOVO h1 {
+  font-size: 48px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+
+.footer_NOVO p {
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.6;
+}
+.footer_for_buyer p {
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.footer_for_buyer h4 {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.btns_for_user {
+  display: flex;
+  gap: 60px;
+  position: relative;
+  top: 20px;
+}
+
+.btns_for_user a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 200ms ease-in-out;
+}
+
+.logo_link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btns_for_user a:hover {
+  opacity: 0.6;
+}
+.footer_soc_media p {
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.6;
+}
+.footer_soc_media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex_soc_media {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  top: 20px;
+  align-items: center;
+}
+.logo3 {
+  width: 30px;
+}
+.logo2 {
+  width: 31px;
+  height: auto;
+}
+
+.logo1 {
+  width: 28px;
+}
+.soc_logo {
+  transition: all 200ms ease-in-out;
+}
+
+.soc_logo:hover {
+  opacity: 0.6;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed rgb(47, 47, 52);
+  width: 1200px;
+  height: 55px;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.copyright p {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.menu_icons {
+  display: none;
+}
+
+.var_short_txt o {
+  display: none;
+}
+.action-buttons {
+  display: none; /* Скрываем кнопки по умолчанию */
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили кнопок */
+.edit-btn,
+.delete-btn {
+  flex: 1;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  width: 100%;
+}
+
+.edit-btn {
+  background-color: rgba(0, 150, 97, 0.1);
+  color: rgba(0, 150, 97, 1);
+}
+
+.edit-btn:hover {
+  background-color: rgba(0, 150, 97, 0.185);
+}
+
+.delete-btn {
+  background-color: #ffebee;
+  color: #d32f2f;
+}
+
+.delete-btn:hover {
+  background-color: #ffcdd2aa;
+}
+.car-card:hover .action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.car-card:hover .car-cost-geo p,
+.car-card:hover .car-cost-geo h1 {
+  display: none;
+}
+
+@media (min-width: 1280px) {
+  .car-card:hover .action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+    gap: 8px;
+  }
+
+  .car-card:hover .car-cost-geo p,
+  .car-card:hover .car-cost-geo h1 {
+    display: none;
+  }
+
+  .car-grid {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .header,
+  .header2 {
+    width: 80%;
+  }
+  .car-card:hover .action-buttons {
+    display: none;
+  }
+
+  .car-card:hover .car-cost-geo p,
+  .car-card:hover .car-cost-geo h1 {
+    display: block;
+  }
+
+  .search_block_inner {
+    width: 80%;
+  }
+
+  .car-grid {
+    width: 80%;
+  }
+
+  .copyright {
+    width: 1000px;
+  }
+
+  .footer_inner {
+    width: 1000px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .my_posts h1 {
+    font-size: 50px;
+  }
+  .header,
+  .header2 {
+    width: 80%;
+  }
+
+  .search_block_inner {
+    width: 80%;
+  }
+
+  .link_enter p,
+  o {
+    font-size: 12px;
+  }
+
+  .header_2_ul {
+    margin-bottom: 10px;
+    gap: 40px;
+  }
+
+  .link_enter {
+    padding: 12px 18px;
+  }
+
+  .link_enter_2 {
+    padding: 12px 18px;
+  }
+
+  .header2_menu p {
+    font-size: 14px;
+  }
+  .copyright {
+    width: 700px;
+    border: 1px dashed rgb(47, 47, 52);
+  }
+
+  .footer_inner {
+    width: 700px;
+    margin-bottom: 30px;
+    align-items: baseline;
+  }
+
+  .footer_NOVO p {
+    font-size: 12px;
+    font-weight: 100;
+    max-width: 230px;
+  }
+
+  .btns_for_user {
+    margin-top: 0px;
+    gap: 10px;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+  }
+  .header2_menu a:after {
+    height: 0px; /* Высота линии */
+  }
+  .car-card:hover .action-buttons {
+    display: none;
+  }
+
+  .car-card:hover .car-cost-geo p,
+  .car-card:hover .car-cost-geo h1 {
+    display: block;
+  }
+  .car-grid {
+    width: 80%;
+  }
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+  .main_logo_for_seller h1 {
+    font-size: 18px;
+  }
+  .link_enter p,
+  o {
+    font-size: 12px;
+  }
+
+  .my_posts h1 {
+    font-size: 30px;
+  }
+
+  .my_posts {
+    margin-bottom: 20px;
+  }
+
+  .link_enter {
+    padding: 12px 18px;
+  }
+
+  .link_enter_2 {
+    padding: 12px 18px;
+  }
+  .header_sec1 {
+    height: 70px;
+  }
+  .header,
+  .header2 {
+    width: 80%;
+    margin: auto;
+  }
+
+  .add-button {
+    padding: 0px 10px;
+  }
+
+  .link_enter p {
+    font-size: 12px;
+  }
+
+  .link_enter o {
+    display: none;
+  }
+
+  .header_2_ul {
+    margin-bottom: 10px;
+    gap: 25px;
+  }
+
+  .link-ease-in-out p {
+    padding-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .link_enter {
+    padding: 12px 18px;
+  }
+
+  .var_txt p {
+    display: none;
+  }
+
+  .var_txt img {
+    display: block;
+    width: 22px;
+  }
+
+  .wrapper3 {
+    margin-top: 20px;
+  }
+
+  .count_of_used {
+    margin-bottom: 20px;
+  }
+
+  .car-grid {
+    padding: 0;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .car-card-link {
+    display: flex;
+    justify-content: center;
+  }
+  .car-card {
+    width: 80%;
+  }
+
+  .search_input {
+    border: none;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    font-size: 20px;
+  }
+  .search_block_inner {
+    width: 80%;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgb(47, 47, 52);
+    width: 380px;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .footer_inner {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос */
+    justify-content: flex-start;
+    width: 380px;
+  }
+
+  .footer_for_buyer,
+  .footer_soc_media {
+    order: 1; /* Опционально: меняет порядок */
+  }
+
+  .btns_for_user {
+    gap: 5px;
+    flex-direction: column;
+    top: 5px;
+  }
+  .footer_for_buyer {
+    margin-right: 100px;
+  }
+
+  .footer_NOVO {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  footer {
+    height: auto;
+  }
+
+  .lang_money {
+    display: none;
+  }
+
+  .header2_menu a:after {
+    height: 0px; /* Высота линии */
+  }
+  .car-card:hover .action-buttons {
+    display: none;
+  }
+
+  .car-card:hover .car-cost-geo p,
+  .car-card:hover .car-cost-geo h1 {
+    display: block;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .header_sec1 {
+    height: 60px;
+  }
+  .header,
+  .header2 {
+    width: 80%;
+    margin: auto;
+  }
+
+  footer {
+    height: auto;
+  }
+  .footer_NOVO {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgb(47, 47, 52);
+    width: 280px;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .footer_inner {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос */
+    justify-content: flex-start;
+
+    width: 280px;
+  }
+
+  .footer_for_buyer,
+  .footer_soc_media {
+    order: 1; /* Опционально: меняет порядок */
+  }
+
+  .footer_for_buyer {
+    margin-bottom: 20px;
+    margin-right: 22px;
+  }
+
+  .flex_soc_media {
+    top: 5px;
+  }
+
+  .btns_for_user {
+    gap: 5px;
+    flex-direction: column;
+    top: 7px;
+  }
+
+  .btns_for_user h4 {
+    font-size: 12px;
+  }
+  .link_enter o {
+    display: none;
+  }
+
+  .link_enter {
+    padding: 5px 20px;
+  }
+
+  .lang_money {
+    display: none;
+  }
+  .var_txt p {
+    display: none;
+  }
+
+  .var_txt img {
+    display: block;
+    width: 22px;
+  }
+
+  .input-with-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .search_input {
+    width: 100%;
+  }
+
+  .add-button {
+    width: 100%;
+    height: 55px;
+  }
+
+  .header_2_ul {
+    margin-bottom: 10px;
+    gap: 20px;
+    align-items: normal;
+  }
+  .my_posts h1 {
+    font-size: 30px;
+  }
+
+  .my_posts {
+    margin: 24px 0px;
+  }
+
+  .main_logo_for_seller h1 {
+    font-size: 20px;
+  }
+
+  .link-ease-in-out p {
+    font-size: 10px;
+  }
+
+  .var_short_txt o {
+    display: block;
+  }
+  .var_short_txt p {
+    display: none;
+  }
+  .search_block_inner {
+    width: 80%;
+  }
+
+  .count_of_used h3 {
+    font-size: 19px;
+  }
+
+  .count_of_used h2 {
+    font-size: 20px;
+  }
+  .count_of_used {
+    align-items: baseline;
+    margin-bottom: 40px;
+  }
+
+  .car-grid {
+    padding: 0;
+  }
+
+  .header2_menu a:after {
+    height: 0px; /* Высота линии */
+  }
+  .car-card:hover .action-buttons {
+    display: none;
+  }
+
+  .car-card:hover .car-cost-geo p,
+  .car-card:hover .car-cost-geo h1 {
+    display: block;
+  }
+
+  .car-cost-geo p,
+  .car-cost-geo h1 {
+    font-size: 14px;
+  }
+}
