@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(20, 20, 22, 1);
+  background-color: rgb(255, 255, 255);
   width: 100%;
 }
 
@@ -28,17 +28,17 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  color: #fff;
+  color: #000000;
 }
 
 .enter_btn a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
 }
 
 ul a {
   text-decoration: none;
-  color: #fff;
+  color: #000000;
   font-size: 14px;
   opacity: 0.6;
   transition: all 200ms ease-in-out;
@@ -64,53 +64,59 @@ li {
 }
 
 .main_logo_for_seller {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 }
 
 .link_enter {
-  background-color: rgba(27, 27, 30, 1);
-  padding: 16px 32px;
+  background-color: rgba(0, 150, 97, 1);
+  padding: 10px 32px;
   border-radius: 10px;
   transition: all 200ms ease-in-out;
 }
 
 .link_enter:hover {
-  background-color: rgb(43, 43, 45);
+  background-color: rgb(255, 255, 255);
+  outline: 1px solid rgba(0, 150, 97, 1);
+  color: rgba(0, 150, 97, 1);
 }
 
 .sec1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(20, 20, 22, 1);
+  background-color: rgb(255, 255, 255);
 }
 
 .wrapper1 {
   display: flex;
-  width: 77%;
-  margin-bottom: 90px;
+  width: 100%;
+  margin-bottom: 180px;
 }
 
 .bg_photo1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 760px;
+  height: 770px;
   width: 100%;
   background: linear-gradient(
       to right,
-      rgba(20, 20, 22, 1) 20%,
-      rgba(255, 255, 255, 0) 100%
+      rgba(17, 30, 32, 1) 30%,
+      rgba(255, 0, 0, 0) 100%
     ),
-    url(images/page_1_bg_compressed.jpg) no-repeat;
-  background-size: cover;
-  background-position: -70% 90%;
+    url(images/page_1_bg\ cut) no-repeat;
+
+  background-position: 100% 100%;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
 }
 
 .page_1_txt {
   width: 1215px;
-  color: #fff;
+  color: #ffffff;
 }
 
 .page_1_txt p {
@@ -126,7 +132,7 @@ li {
 }
 
 .page_1_txt a {
-  color: #fff;
+  color: #000000;
   text-decoration: none;
 
   display: block;
@@ -149,7 +155,7 @@ li {
 
 .about_us {
   text-align: center;
-  color: #ffffff;
+  color: #000000;
 }
 
 .about_us p {
@@ -162,7 +168,7 @@ li {
 .about_us h2 {
   font-size: 40px;
   font-weight: 400;
-  color: #fff;
+  color: #000000;
 }
 
 .about_us_photos {
@@ -269,7 +275,7 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(27, 27, 30, 1);
+  background-color: rgba(248, 248, 248, 1);
   height: 640px;
   justify-content: center;
 }
@@ -323,7 +329,7 @@ li {
   font-family: Manrope;
   font-weight: 400;
   font-size: 24px;
-  color: #fff;
+  color: #000000;
   text-align: center;
 }
 
@@ -337,7 +343,7 @@ li {
   font-family: Manrope;
   font-weight: 400;
   font-size: 24px;
-  color: #fff;
+  color: #000000;
   text-align: center;
 }
 
@@ -351,7 +357,7 @@ li {
   font-family: Manrope;
   font-weight: 400;
   font-size: 24px;
-  color: #fff;
+  color: #000000;
   text-align: center;
 }
 
@@ -359,13 +365,13 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(20, 20, 22, 1);
+  background-color: rgb(255, 255, 255);
   height: 1500px;
 }
 
 .sec3_txt {
   margin-top: 180px;
-  color: #fff;
+  color: #000000;
   text-align: center;
 }
 
@@ -389,20 +395,26 @@ li {
 }
 
 .cards_special {
-  color: #fff;
+  color: #000000;
+  background-color: #fff;
 }
 
 .cards_special span {
-  color: #ffffff49;
+  color: #000000ad;
   font-size: 16px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
-.arrow {
+.arrow,
+.arrow2 {
   border: 1px rgba(0, 150, 97, 1) solid;
   border-radius: 100%;
   padding: 20px 24px;
   transition: all 200ms ease-in-out;
+}
+
+.arrow2 {
+  display: none;
 }
 
 .crd h4 {
@@ -425,6 +437,7 @@ li {
   align-items: center;
   width: 290px;
   height: 370px;
+  border-radius: 5px;
 }
 
 .circle {
@@ -433,20 +446,29 @@ li {
 }
 
 .cards_special a {
-  color: #fff;
+  color: #000000;
   border-radius: 10px;
   text-decoration: none;
-  background-color: rgb(23, 23, 26);
+  background-color: #f2f2f2;
   transition: 200ms all ease-in-out;
 }
 
-.cards_special a:hover,
-.cards_special {
-  background-color: rgb(29, 29, 32);
+.cards_special a:hover {
+  background-color: #e3e3e3;
+  box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.238);
+}
+
+.cards_special a:hover .arrow {
+  display: none;
+}
+
+.cards_special a:hover .arrow2 {
+  background-color: rgba(0, 150, 97, 1);
+  display: block;
 }
 
 .special_offer {
-  margin-top: 120px;
+  margin-top: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -492,7 +514,7 @@ li {
   left: 0;
   top: 0;
   scale: 0;
-  background-color: #00000022;
+  background-color: #00000059;
   backdrop-filter: blur(20px);
   z-index: 5;
 }
@@ -518,12 +540,12 @@ li {
   position: relative;
   box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.15), 0 0 40px 0 rgba(0, 0, 0, 0.1);
   /* spread-значение (-2px) помогает сделать границы мягче */
-  background-color: rgb(38, 38, 42);
+  background-color: rgb(255, 255, 255);
 }
 
 .pop_up_body h1 {
   margin-top: 80px;
-  color: #fff;
+  color: #000000;
   text-align: center;
   width: 445px;
   font-size: 40px;
@@ -532,7 +554,7 @@ li {
 }
 
 .pop_up_body p {
-  color: #fff;
+  color: #000000;
   font-size: 16px;
   opacity: 0.6;
   text-align: center;
@@ -545,10 +567,10 @@ li {
   background-color: transparent;
   outline: none;
   border: none;
-  border-bottom: 2px rgba(162, 165, 166, 1) solid;
+  border-bottom: 3px rgba(162, 165, 166, 1) solid;
 }
 input {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 input:-webkit-autofill {
   -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
@@ -556,7 +578,7 @@ input:-webkit-autofill {
 }
 
 input:focus {
-  border-color: rgb(255, 255, 255); /* Или любой другой цвет */
+  border-color: rgb(105, 105, 105); /* Или любой другой цвет */
 }
 
 #callback {
@@ -571,7 +593,7 @@ input:focus {
   font-size: 28px;
   line-height: 0.8;
   cursor: pointer;
-  color: #fff;
+  color: #000000;
   font-weight: 100;
 }
 
@@ -581,12 +603,13 @@ input:focus {
   display: flex;
   width: 500px;
   height: 300px;
-  background-color: rgba(27, 27, 30, 1);
+  background-color: rgba(242, 242, 242, 1);
   border-radius: 0px 8px 8px 0px;
   position: relative;
   left: -1%;
   z-index: 0;
   color: #fff;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.165);
 }
 
 .page_1_txt a {
@@ -611,16 +634,18 @@ input:focus {
 .pop_up_btn:hover {
   background-color: #ffffff;
   color: rgba(0, 150, 97, 1);
+  outline: 2px solid rgba(0, 150, 97, 1);
 }
 
 .right_site_txt a {
-  color: #fff;
+  color: #ffffff;
   text-decoration: none;
   display: block;
   width: 320px;
 }
 
 .right_site_txt h1 {
+  color: #000000;
   font-family: Manrope;
   font-weight: 400;
   font-size: 24px;
@@ -630,6 +655,7 @@ input:focus {
 }
 
 .right_site_txt p {
+  color: #000000;
   font-family: Manrope;
   font-weight: 400;
   font-size: 16px;
@@ -643,13 +669,13 @@ input:focus {
 .sec4 {
   display: flex;
   flex-direction: column;
-  background-color: rgba(27, 27, 30, 1);
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .wrapper4 {
   display: flex;
   justify-content: center;
-  color: #fff;
+  color: #000000;
 }
 
 .wrapper4 h1 {
@@ -664,7 +690,12 @@ input:focus {
   align-items: center;
   gap: 60px;
   margin-top: 80px;
-  color: #fff;
+  color: #000000;
+}
+
+.steps_photo {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.332);
+  border-radius: 8px;
 }
 
 .flex_step1,
@@ -846,6 +877,102 @@ footer {
 }
 
 /* ---------- Кнопка возвращения наверх ---------- */
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+
+.burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #000000; /* Черный цвет */
+}
+
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #000000; /* Черный цвет */
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+}
+
+.burger::after {
+  bottom: 0;
+  transition: bottom 0.3s 0.15s, transform 0.3s;
+}
+
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0); /* Черный цвет */
+  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+}
+
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom 0.3s, transform 0.3s 0.15s;
+}
+
+.burg-list {
+  top: 60px; /* Убедитесь, что меню не перекрывает заголовок */
+  left: 0;
+  position: absolute;
+  display: grid;
+  gap: 12px;
+  padding: 20px 0;
+  margin: 0;
+  background: rgb(255, 255, 255);
+  list-style-type: none;
+  transform: translateY(-120%); /* Скрыто изначально */
+  transition: 0.3s;
+  width: 100%;
+  z-index: 2;
+  border-radius: 0px 0px 20px 20px;
+}
+
+.burg-list a {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.burg-list a:active {
+  opacity: 0.6;
+}
+
+.burg-item {
+  display: block;
+  padding: 8px;
+  font-weight: 700;
+  color: rgba(0, 150, 97, 1);
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.burg-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.burger-checkbox:checked ~ .burg-list {
+  transform: translateY(3%); /* Меню появляется */
+}
+
 .back-to-top {
   position: fixed;
   bottom: 50px;
@@ -875,109 +1002,56 @@ footer {
   visibility: visible;
 }
 
-.burger-checkbox {
-  position: absolute;
-  visibility: hidden;
-}
-.burger {
-  position: relative;
-  z-index: 1;
-  cursor: pointer;
-  display: block;
-  position: relative;
-  border: none;
-  background: transparent;
-  width: 40px;
-  height: 26px;
-}
-.burger::before,
-.burger::after {
-  content: "";
-  left: 0;
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 10px;
-  background: #ffffff;
-}
-.burger::before {
-  top: 0;
-  box-shadow: 0 11px 0 #ffffff;
-  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
-}
-.burger::after {
-  bottom: 0;
-  transition: bottom 0.3s 0.15s, transform 0.3s;
-}
-.burger-checkbox:checked + .burger::before {
-  top: 11px;
-  transform: rotate(45deg);
-  box-shadow: 0 6px 0 rgba(255, 255, 255, 0);
-  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
-}
-.burger-checkbox:checked + .burger::after {
-  bottom: 11px;
-  transform: rotate(-45deg);
-  transition: bottom 0.3s, transform 0.3s 0.15s;
-}
-.burg-list {
-  top: 70px;
-  left: 0px;
-  position: absolute;
-  display: grid;
-  gap: 12px;
-  padding: 42px 0;
-  margin: 0;
-  background: rgb(255, 255, 255);
-  list-style-type: none;
-  transform: translateX(-101%);
-  transition: 0.3s;
-  width: 100%;
-  z-index: 2;
-  border-radius: 8px;
-}
-
-.burg-list a {
-  opacity: 1;
-  transition: all 200ms ease-in-out;
-}
-
-.burg-list a:active {
-  opacity: 0.6;
-}
-.burg-item {
-  display: block;
-  padding: 8px;
-  font-weight: 700;
-  color: rgba(0, 150, 97, 1);
-  font-size: 18px;
-  text-align: center;
-  text-decoration: none;
-}
-.burg-item:hover {
-  background: rgba(255, 255, 255, 0.2);
-}
-.burger-checkbox:checked ~ .burg-list {
-  transform: translateX(0);
-}
-
 /*------- медиазапросы под разные устройства -------*/
 /* Стандартные ноутбуки и десктопы */
 
 @media (min-width: 1440px) and (max-width: 1919px) {
   .bg_photo1 {
-    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 770px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(17, 30, 32, 1) 30%,
+        rgba(255, 0, 0, 0) 100%
+      ),
+      url(images/page_1_bg\ cut) no-repeat;
+
+    background-position: 100% 100%;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+  }
+
+  .wrapper1 {
+    width: 100%;
   }
 }
 @media (min-width: 1280px) and (max-width: 1439px) {
   .bg_photo1 {
-    background-size: 110%;
-    background-position: -70% 90%;
-    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(17, 30, 32, 1) 40%,
+        rgba(255, 0, 0, 0) 100%
+      ),
+      url(images/page_1_bg\ cut) no-repeat;
+
+    background-position: 100% 100%;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: contain;
   }
   .wrapper1 {
-    width: 1280px;
+    width: 100%;
   }
   .first_img img {
     width: 1280px;
@@ -1081,10 +1155,23 @@ footer {
 /* Планшеты (горизонтальная ориентация) и маленькие ноутбуки */
 @media (min-width: 1024px) and (max-width: 1279px) {
   .bg_photo1 {
-    background-size: 110%;
-    background-position: -70% 100%;
-    height: 450px;
-    width: 107%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(17, 30, 32, 1) 40%,
+        rgba(255, 0, 0, 0) 100%
+      ),
+      url(images/page_1_bg\ cut) no-repeat;
+
+    background-position: 100% 100%;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: contain;
   }
 
   .input_pop:active,
@@ -1130,12 +1217,13 @@ footer {
   }
   .wrapper1 {
     display: flex;
-    width: 900px;
+    width: 100%;
     margin-bottom: 90px;
   }
 
   .sec3_txt {
     margin-top: 100px;
+    color: #000000;
   }
   .wrapper3 {
     width: 900px;
@@ -1172,7 +1260,7 @@ footer {
   }
 
   .page_1_txt {
-    margin-left: 60px;
+    width: 900px;
   }
 
   .page_1_txt p {
@@ -1211,27 +1299,34 @@ footer {
     display: flex;
     gap: 120px;
     justify-content: center;
-  }
-
-  .cards_special {
     color: #fff;
   }
 
   .cards_special span {
-    color: #ffffff49;
+    color: #00000049;
     font-size: 16px;
     font-weight: 100;
   }
 
+  .arrow2 {
+    display: none;
+  }
+
+  .cards_special a:hover .arrow {
+    background-color: rgba(0, 150, 97, 1);
+  }
+
+  .cards_special a:hover {
+    background-color: rgb(255, 255, 255);
+  }
+
   .arrow {
+    color: rgba(0, 150, 97, 1);
+    display: block;
     border: 1px rgba(0, 150, 97, 1) solid;
     border-radius: 100%;
     padding: 15px 19px;
     transition: all 200ms ease-in-out;
-  }
-
-  .arrow:hover {
-    background-color: rgba(0, 150, 97, 1);
   }
 
   .crd h4 {
@@ -1249,6 +1344,7 @@ footer {
   }
 
   .crd {
+    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1280,7 +1376,7 @@ footer {
     font-family: Manrope;
     font-weight: 400;
     font-size: 24px;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
 
@@ -1294,7 +1390,7 @@ footer {
     font-family: Manrope;
     font-weight: 400;
     font-size: 24px;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
 
@@ -1308,7 +1404,7 @@ footer {
     font-family: Manrope;
     font-weight: 400;
     font-size: 24px;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
 }
@@ -1316,11 +1412,29 @@ footer {
 /* Планшеты (вертикальная ориентация) */
 @media (min-width: 768px) and (max-width: 1023px) {
   .bg_photo1 {
-    background-size: 110%;
-    background-position: -70% 90%;
-    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(17, 30, 32, 1) 40%,
+        rgba(255, 0, 0, 0) 100%
+      ),
+      url(images/page_1_bg\ cut) no-repeat;
+
+    background-position: 100% 100%;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: cover;
+  }
+
+  .wrapper1 {
     width: 100%;
   }
+
   .input_pop:active,
   .input_pop::after {
     background-color: transparent;
@@ -1342,13 +1456,11 @@ footer {
   #callback {
     margin-bottom: 40px;
   }
-  .wrapper1 {
-    width: 768px;
-  }
+
   .first_img img {
     width: 768px;
   }
-  li {
+  .header_btns li {
     display: none;
   }
 
@@ -1375,11 +1487,6 @@ footer {
     align-items: center;
     justify-content: center;
   }
-  .wrapper1 {
-    display: flex;
-    width: 768px;
-    margin-bottom: 60px;
-  }
 
   .about_us h2 {
     font-size: 32px;
@@ -1394,6 +1501,7 @@ footer {
   }
   .sec3_txt {
     margin-top: 100px;
+    color: #000000;
   }
   .wrapper3 {
     width: 768px;
@@ -1433,7 +1541,7 @@ footer {
   }
 
   .page_1_txt {
-    margin-left: 60px;
+    width: 700px;
   }
 
   .page_1_txt p {
@@ -1521,6 +1629,7 @@ footer {
   }
 
   .crd {
+    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1568,7 +1677,7 @@ footer {
     font-family: Manrope;
     font-weight: 400;
     font-size: 18px;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
 
@@ -1582,7 +1691,7 @@ footer {
     font-family: Manrope;
     font-weight: 400;
     font-size: 18px;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
 
@@ -1596,7 +1705,7 @@ footer {
     font-family: Manrope;
     font-weight: 400;
     font-size: 18px;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
   .stepped-container {
@@ -1619,10 +1728,26 @@ footer {
 /* Крупные мобильные / маленькие планшеты */
 @media (min-width: 479px) and (max-width: 767px) {
   .bg_photo1 {
-    background-size: 110%;
-    background-position: -70% 90%;
-    height: 360px;
-    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(17, 30, 32, 1) 10%,
+        rgba(255, 0, 0, 0) 100%
+      ),
+      url(images/page_1_bg\ cut) no-repeat;
+
+    background-position: 100% 100%;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: cover;
+  }
+  .wrapper1 {
+    width: 100%;
   }
 
   .input_pop:active,
@@ -1668,24 +1793,6 @@ footer {
   .menu img {
     width: 32px;
     height: auto;
-  }
-
-  .bg_photo1 {
-    background: linear-gradient(
-          to top,
-          rgba(20, 20, 22, 1) 0%,
-          rgba(0, 0, 0, 0)
-        )
-        50%,
-      url("images/page_1_bg.jpg") no-repeat;
-    background-size: 180%;
-    background-position: 70% 95%;
-    height: 360px;
-
-    width: 100%;
-  }
-  .wrapper1 {
-    width: 479px;
   }
 
   .wrapper2 {
@@ -1734,6 +1841,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #000000;
   }
 
   .stepped-container {
@@ -1814,6 +1922,7 @@ footer {
   }
 
   .crd {
+    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1973,6 +2082,7 @@ footer {
   }
   .sec3_txt {
     margin-top: 80px;
+    color: #000000;
   }
   .sec4_button {
     margin-top: 50px;
@@ -2000,7 +2110,7 @@ footer {
     font-family: Manrope;
     font-weight: 400;
     font-size: 12px;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
 
@@ -2027,7 +2137,7 @@ footer {
     font-family: Manrope;
     font-weight: 400;
     font-size: 14px;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
 
@@ -2041,8 +2151,14 @@ footer {
     font-family: Manrope;
     font-weight: 400;
     font-size: 12px;
-    color: #fff;
+    color: #000000;
     text-align: center;
+  }
+
+  .cards_special a {
+    display: flex;
+    justify-content: center;
+    width: 80%;
   }
 }
 
@@ -2100,17 +2216,23 @@ footer {
   }
 
   .bg_photo1 {
-    background: linear-gradient(
-          to top,
-          rgba(20, 20, 22, 1) 0%,
-          rgba(0, 0, 0, 0)
-        )
-        50%,
-      url("images/page_1_bg.jpg") no-repeat;
-    background-size: 180%;
-    background-position: 70% 95%;
-    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
     width: 100%;
+    background: linear-gradient(
+        to top,
+        rgba(17, 30, 32, 1) 10%,
+        rgba(255, 0, 0, 0) 100%
+      ),
+      url(images/page_1_bg\ cut) no-repeat;
+
+    background-position: 100% 100%;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: cover;
   }
   .wrapper1 {
     width: 100%;
@@ -2172,6 +2294,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #000000;
   }
 
   .stepped-container {
@@ -2236,7 +2359,6 @@ footer {
   }
 
   .cards_special {
-    gap: 50px;
   }
   .crd h4 {
     color: rgba(0, 150, 97, 1);
@@ -2253,10 +2375,11 @@ footer {
   }
 
   .crd {
+    background-color: #f2f2f2;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 170px;
+    width: 100%;
     height: 250px;
   }
 
@@ -2426,6 +2549,7 @@ footer {
   }
   .sec3_txt {
     margin-top: 80px;
+    color: #000000;
   }
   .sec4_button {
     margin-top: 50px;
@@ -2449,7 +2573,7 @@ footer {
     font-family: Manrope;
     font-weight: 100;
     font-size: 14px;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
 
@@ -2463,7 +2587,7 @@ footer {
     font-family: Manrope;
     font-weight: 100;
     font-size: 14px;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
 
@@ -2477,7 +2601,7 @@ footer {
     font-family: Manrope;
     font-weight: 100;
     font-size: 14px;
-    color: #fff;
+    color: #000000;
     text-align: center;
   }
   .about_us_photos {
@@ -2514,8 +2638,9 @@ footer {
     background-color: transparent;
   }
 
-  .cards_special a:active {
-    background-color: rgba(27, 27, 30, 1);
+  .cards_special a:active,
+  .cards_special a:hover {
+    background-color: #f2f2f2;
   }
 
   .arrow:hover {
