@@ -102,7 +102,7 @@ li {
   width: 100%;
   background: linear-gradient(
       to right,
-      rgba(17, 30, 32, 1) 40%,
+      rgba(17, 30, 32, 1) 50%,
       rgba(255, 0, 0, 0) 100%
     ),
     url(images/page_1_bg\ cut) no-repeat;
