@@ -149,7 +149,7 @@ li {
 
 .about_us {
   text-align: center;
-  color: #fff;
+  color: #ffffff;
 }
 
 .about_us p {
@@ -162,6 +162,7 @@ li {
 .about_us h2 {
   font-size: 40px;
   font-weight: 400;
+  color: #fff;
 }
 
 .about_us_photos {
