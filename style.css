@@ -104,7 +104,7 @@ li {
       rgba(255, 255, 255, 0) 100%
     ),
     url(images/page_1_bg_compressed.jpg) no-repeat;
-  background-size: 110%;
+  background-size: cover;
   background-position: -70% 90%;
 }
 
@@ -404,10 +404,6 @@ li {
   transition: all 200ms ease-in-out;
 }
 
-.arrow:hover {
-  background-color: rgba(0, 150, 97, 1);
-}
-
 .crd h4 {
   color: rgba(0, 150, 97, 1);
   font-weight: 18px;
@@ -443,7 +439,8 @@ li {
   transition: 200ms all ease-in-out;
 }
 
-.cards_special a:hover {
+.cards_special a:hover,
+.cards_special {
   background-color: rgb(29, 29, 32);
 }
 
@@ -875,6 +872,93 @@ footer {
 .back-to-top.visible {
   opacity: 1;
   visibility: visible;
+}
+
+.burger-checkbox {
+  position: absolute;
+  visibility: hidden;
+}
+.burger {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 26px;
+}
+.burger::before,
+.burger::after {
+  content: "";
+  left: 0;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+.burger::before {
+  top: 0;
+  box-shadow: 0 11px 0 #ffffff;
+  transition: box-shadow 0.3s 0.15s, top 0.3s 0.15s, transform 0.3s;
+}
+.burger::after {
+  bottom: 0;
+  transition: bottom 0.3s 0.15s, transform 0.3s;
+}
+.burger-checkbox:checked + .burger::before {
+  top: 11px;
+  transform: rotate(45deg);
+  box-shadow: 0 6px 0 rgba(255, 255, 255, 0);
+  transition: box-shadow 0.15s, top 0.3s, transform 0.3s 0.15s;
+}
+.burger-checkbox:checked + .burger::after {
+  bottom: 11px;
+  transform: rotate(-45deg);
+  transition: bottom 0.3s, transform 0.3s 0.15s;
+}
+.burg-list {
+  top: 70px;
+  left: 0px;
+  position: absolute;
+  display: grid;
+  gap: 12px;
+  padding: 42px 0;
+  margin: 0;
+  background: rgb(255, 255, 255);
+  list-style-type: none;
+  transform: translateX(-101%);
+  transition: 0.3s;
+  width: 100%;
+  z-index: 2;
+  border-radius: 8px;
+}
+
+.burg-list a {
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+
+.burg-list a:active {
+  opacity: 0.6;
+}
+.burg-item {
+  display: block;
+  padding: 8px;
+  font-weight: 700;
+  color: rgba(0, 150, 97, 1);
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+}
+.burg-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+.burger-checkbox:checked ~ .burg-list {
+  transform: translateX(0);
 }
 
 /*------- медиазапросы под разные устройства -------*/

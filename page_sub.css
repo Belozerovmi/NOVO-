@@ -1,0 +1,982 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* HEADER SECTION */
+.header_sec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+.header {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  width: 1215px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000;
+}
+
+.header_link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.enter_btn a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.logo h1 {
+  font-family: "inter", sans-serif;
+  color: #000000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.main_logo_for_seller {
+  color: #fff;
+  text-decoration: none;
+}
+
+.lang_money {
+  display: flex;
+  gap: 25px;
+}
+.languages,
+.money {
+  display: flex;
+  align-items: baseline;
+}
+
+.languages svg,
+.money svg {
+  margin-left: 10px;
+  width: 10px;
+  line-height: 0;
+}
+
+.link_enter p,
+.link_enter_2 p {
+  font-weight: bold;
+}
+
+.link_enter,
+.link_enter_2 {
+  background-color: rgba(0, 150, 97, 1);
+  padding: 16px 32px;
+  border-radius: 5px;
+  transition: all 200ms ease-in-out;
+}
+
+.link_enter:hover,
+.link_enter_2:hover {
+  background-color: #ffffff;
+  color: rgba(0, 150, 97, 1);
+  outline: 1px solid rgba(0, 150, 97, 1);
+}
+
+.header_sec2 {
+  border-top: 2px solid rgba(139, 149, 158, 0.074);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+.header2 {
+  margin-top: 32px;
+
+  width: 1215px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #000000;
+}
+
+.my_posts h1 {
+  font-family: Manrope;
+  font-weight: bold;
+  font-size: 54px;
+}
+.my_posts {
+  margin-bottom: 40px;
+}
+
+.header_2_ul {
+  display: flex;
+  list-style-type: none;
+  gap: 60px;
+  align-items: center;
+}
+
+.p_in_li p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link-ease-in-out p {
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.header2_menu a {
+  display: inline-block;
+  color: #000000; /* Цвет обычной ссылки */
+  line-height: 1;
+  text-decoration: none; /* Убираем подчеркивание */
+  cursor: pointer;
+}
+.header2_menu a:after {
+  background-color: rgba(
+    0,
+    150,
+    97,
+    1
+  ); /* Цвет линии при наведении на нее курсора мыши */
+  display: block;
+  content: "";
+  height: 4px; /* Высота линии */
+  width: 0%;
+  transition: 200ms ease-in-out;
+}
+.header2_menu a:hover:after,
+.header2_menu a:focus:after {
+  width: 100%;
+}
+
+.var_txt p {
+  display: block;
+}
+
+.var_txt img {
+  display: none;
+  width: 22px;
+}
+
+.var_short_txt o {
+  display: none;
+}
+.var_short_txt p {
+  display: block;
+}
+
+/* Настройки HEADER */ /* Настройки HEADER */ /* Настройки HEADER */ /* Настройки HEADER */ /* Настройки HEADER */ /* Настройки HEADER */
+
+.sec3 {
+  min-height: 700px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(249, 249, 249);
+}
+
+.wrapper3 {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.crd h4 {
+  color: rgba(0, 150, 97, 1);
+  font-weight: 18px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.crd h1 {
+  margin-top: 20px;
+  font-size: 40px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.crd {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 290px;
+  height: auto;
+  background-color: #ffffff;
+}
+
+.circle {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.card_link1,
+.card_link2,
+.card_link3 {
+  text-decoration: none;
+  color: black;
+}
+
+.your_plan_flex {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1215px;
+  align-items: flex-start;
+}
+
+.your_plan_flex h2 {
+  margin-bottom: 40px;
+}
+
+.your_plan_inner {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.plan_date {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.plan_date p {
+  color: #000;
+  opacity: 0.6;
+  margin-bottom: 8px;
+}
+
+.plan_date h3 {
+  color: rgba(0, 150, 97, 1);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.under_crd_txt {
+  color: rgba(134, 134, 134, 1);
+  margin-bottom: 80px;
+}
+
+.under_crd_txt span {
+  color: rgba(0, 150, 97, 1);
+}
+
+hr {
+  width: 1215px;
+  size: 1px;
+  color: #000;
+  opacity: 0.6;
+}
+
+.other_plans_flex {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1215px;
+  align-items: flex-start;
+  margin-bottom: 180px;
+}
+
+.other_plans_flex h2 {
+  margin-bottom: 40px;
+}
+
+.other_plans_inner {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  margin-bottom: 50px;
+  align-items: center;
+  gap: 120px;
+}
+
+.other_plans_cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card_link2 .arrow,
+.card_link3 .arrow {
+  border: 2px rgba(0, 150, 97, 1) solid;
+  border-radius: 100%;
+  padding: 15px 19px;
+  transition: all 200ms ease-in-out;
+  margin-bottom: 40px;
+}
+
+.card_link2:hover .arrow,
+.card_link3:hover .arrow {
+  border: 2px rgb(0, 0, 0) solid;
+  background-color: #e7e7e7;
+}
+
+.sales_department {
+  width: 380px;
+}
+
+.sales_department h4 {
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.r_site_btn,
+.pop_up_btn {
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  background-color: rgba(0, 150, 97, 1);
+  border-radius: 4px;
+  padding: 15px 35px 15px 35px;
+  transition: all 200ms ease-in-out;
+}
+
+.r_site_btn:hover,
+.pop_up_btn:hover {
+  background-color: #ffffff;
+  color: rgba(0, 150, 97, 1);
+}
+
+/* НАСТРОЙКИ FOOTER */ /* НАСТРОЙКИ FOOTER */ /* НАСТРОЙКИ FOOTER */ /* НАСТРОЙКИ FOOTER */ /* НАСТРОЙКИ FOOTER */ /* НАСТРОЙКИ FOOTER */
+
+footer {
+  background-color: rgba(27, 27, 30, 1);
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid rgb(47, 47, 52);
+}
+
+.footer_inner {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  width: 1200px;
+  justify-content: space-around;
+  margin-bottom: 70px;
+  gap: 10px;
+}
+
+.footer_NOVO h1 {
+  font-size: 48px;
+  letter-spacing: 10px;
+  margin-bottom: 10px;
+}
+
+.footer_NOVO p {
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.6;
+}
+.footer_for_buyer p {
+  font-weight: 500;
+  font-size: 14px;
+  opacity: 0.6;
+}
+
+.footer_for_buyer h4 {
+  font-family: Manrope;
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.btns_for_user {
+  display: flex;
+  gap: 60px;
+  position: relative;
+  top: 20px;
+}
+
+.btns_for_user a {
+  text-decoration: none;
+  color: #fff;
+  transition: all 200ms ease-in-out;
+}
+
+.logo_link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btns_for_user a:hover {
+  opacity: 0.6;
+}
+.footer_soc_media p {
+  font-family: Manrope;
+  font-weight: 400;
+  font-size: 14px;
+  opacity: 0.6;
+}
+.footer_soc_media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex_soc_media {
+  display: flex;
+  gap: 12px;
+  position: relative;
+  top: 20px;
+  align-items: center;
+}
+.logo3 {
+  width: 30px;
+}
+.logo2 {
+  width: 31px;
+  height: auto;
+}
+
+.logo1 {
+  width: 28px;
+}
+.soc_logo {
+  transition: all 200ms ease-in-out;
+}
+
+.soc_logo:hover {
+  opacity: 0.6;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed rgb(47, 47, 52);
+  width: 1200px;
+  height: 55px;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.copyright p {
+  color: #fff;
+  opacity: 0.6;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+/* МЕДИАЗАПРОСЫ  МЕДИАЗАПРОСЫ  МЕДИАЗАПРОСЫ  МЕДИАЗАПРОСЫ  МЕДИАЗАПРОСЫ  МЕДИАЗАПРОСЫ  МЕДИАЗАПРОСЫ  МЕДИАЗАПРОСЫ  */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .header,
+  .header2 {
+    width: 80%;
+  }
+  .copyright {
+    width: 1000px;
+  }
+
+  .footer_inner {
+    width: 1000px;
+    margin-bottom: 30px;
+  }
+  .your_plan_flex,
+  .other_plans_flex {
+    width: 90%;
+  }
+  hr {
+    width: 100%;
+  }
+  .other_plans_inner {
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 0;
+    align-items: normal;
+  }
+
+  .other_plans_flex {
+    margin-bottom: 40px;
+  }
+
+  .sales_department {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sales_department h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .my_posts h1 {
+    font-size: 50px;
+  }
+  .header,
+  .header2 {
+    width: 80%;
+  }
+
+  .link_enter p,
+  o {
+    font-size: 12px;
+  }
+
+  .header_2_ul {
+    margin-bottom: 10px;
+    gap: 40px;
+  }
+
+  .link_enter {
+    padding: 12px 18px;
+  }
+
+  .link_enter_2 {
+    padding: 12px 18px;
+  }
+
+  .header2_menu p {
+    font-size: 14px;
+  }
+  .copyright {
+    width: 700px;
+    border: 1px dashed rgb(47, 47, 52);
+  }
+
+  .footer_inner {
+    width: 700px;
+    margin-bottom: 30px;
+    align-items: baseline;
+  }
+
+  .footer_NOVO p {
+    font-size: 12px;
+    font-weight: 100;
+    max-width: 230px;
+  }
+
+  .btns_for_user {
+    margin-top: 0px;
+    gap: 10px;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+  }
+  .header2_menu a:after {
+    height: 0px; /* Высота линии */
+  }
+
+  .your_plan_flex,
+  .other_plans_flex {
+    width: 90%;
+  }
+
+  .other_plans_inner {
+    flex-direction: column;
+  }
+  hr {
+    width: 100%;
+  }
+  .other_plans_inner {
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 0;
+    align-items: normal;
+  }
+
+  .other_plans_cards {
+    justify-content: center;
+  }
+
+  .other_plans_flex {
+    margin-bottom: 40px;
+  }
+
+  .sales_department {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sales_department h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 479px) and (max-width: 767px) {
+  .main_logo_for_seller h1 {
+    font-size: 18px;
+  }
+  .link_enter p,
+  o {
+    font-size: 12px;
+  }
+
+  .my_posts h1 {
+    font-size: 30px;
+  }
+
+  .my_posts {
+    margin-bottom: 20px;
+  }
+
+  .link_enter {
+    padding: 12px 18px;
+  }
+
+  .link_enter_2 {
+    padding: 12px 18px;
+  }
+  .header_sec1 {
+    height: 70px;
+  }
+  .header,
+  .header2 {
+    width: 80%;
+    margin: auto;
+  }
+
+  .link_enter p {
+    font-size: 12px;
+  }
+
+  .link_enter o {
+    display: none;
+  }
+
+  .header_2_ul {
+    margin-bottom: 10px;
+    gap: 25px;
+  }
+
+  .link-ease-in-out p {
+    padding-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .link_enter {
+    padding: 12px 18px;
+  }
+
+  .var_txt p {
+    display: none;
+  }
+
+  .var_txt img {
+    display: block;
+    width: 22px;
+  }
+
+  .wrapper3 {
+    margin-top: 20px;
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgb(47, 47, 52);
+    width: 380px;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .footer_inner {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос */
+    justify-content: flex-start;
+    width: 380px;
+  }
+
+  .footer_for_buyer,
+  .footer_soc_media {
+    order: 1; /* Опционально: меняет порядок */
+  }
+
+  .btns_for_user {
+    gap: 5px;
+    flex-direction: column;
+    top: 5px;
+  }
+  .footer_for_buyer {
+    margin-right: 100px;
+  }
+
+  .footer_NOVO {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  footer {
+    height: auto;
+  }
+
+  .lang_money {
+    display: none;
+  }
+
+  .header2_menu a:after {
+    height: 0px; /* Высота линии */
+  }
+
+  .your_plan_flex,
+  .other_plans_flex {
+    width: 90%;
+  }
+
+  .other_plans_inner {
+    flex-direction: column;
+  }
+  hr {
+    width: 100%;
+  }
+  .other_plans_inner {
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 0;
+    align-items: normal;
+  }
+
+  .other_plans_cards {
+    justify-content: center;
+  }
+
+  .other_plans_flex {
+    margin-bottom: 40px;
+  }
+
+  .sales_department {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sales_department h4 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .card_link2 h1,
+  .card_link3 h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .crd h1 {
+    font-size: 30px;
+  }
+
+  .crd {
+    display: flex;
+
+    width: 200px;
+  }
+
+  .date_left {
+    width: 150px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+  .header_sec1 {
+    height: 60px;
+  }
+  .header,
+  .header2 {
+    width: 80%;
+    margin: auto;
+  }
+
+  footer {
+    height: auto;
+  }
+  .footer_NOVO {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed rgb(47, 47, 52);
+    width: 280px;
+    height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .footer_inner {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос */
+    justify-content: flex-start;
+
+    width: 280px;
+  }
+
+  .footer_for_buyer,
+  .footer_soc_media {
+    order: 1; /* Опционально: меняет порядок */
+  }
+
+  .footer_for_buyer {
+    margin-bottom: 20px;
+    margin-right: 22px;
+  }
+
+  .flex_soc_media {
+    top: 5px;
+  }
+
+  .btns_for_user {
+    gap: 5px;
+    flex-direction: column;
+    top: 7px;
+  }
+
+  .btns_for_user h4 {
+    font-size: 12px;
+  }
+  .link_enter o {
+    display: none;
+  }
+
+  .link_enter {
+    padding: 5px 20px;
+  }
+
+  .lang_money {
+    display: none;
+  }
+  .var_txt p {
+    display: none;
+  }
+
+  .var_txt img {
+    display: block;
+    width: 22px;
+  }
+
+  .header_2_ul {
+    margin-bottom: 10px;
+    gap: 20px;
+    align-items: normal;
+  }
+  .my_posts h1 {
+    font-size: 30px;
+  }
+
+  .my_posts {
+    margin: 24px 0px;
+  }
+
+  .main_logo_for_seller h1 {
+    font-size: 20px;
+  }
+
+  .link-ease-in-out p {
+    font-size: 10px;
+  }
+
+  .var_short_txt o {
+    display: block;
+  }
+  .var_short_txt p {
+    display: none;
+  }
+
+  .header2_menu a:after {
+    height: 0px; /* Высота линии */
+  }
+
+  .your_plan_flex,
+  .other_plans_flex {
+    width: 90%;
+  }
+
+  .your_plan_inner {
+    flex-direction: column;
+  }
+  .plan_date {
+    flex-direction: row;
+  }
+  .other_plans_inner {
+    flex-direction: column;
+  }
+  hr {
+    width: 100%;
+  }
+  .other_plans_inner {
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 0;
+    align-items: normal;
+  }
+
+  .under_crd_txt p {
+    font-size: 12px;
+  }
+
+  .under_crd_txt {
+    margin-bottom: 40px;
+  }
+
+  .other_plans_cards {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .other_plans_flex {
+    margin-bottom: 40px;
+  }
+
+  .other_plans_flex h2 {
+    font-size: 18px;
+    text-align: center;
+  }
+  .sales_department {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sales_department h4 {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .card_link2 h1,
+  .card_link3 h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  .crd h1 {
+    font-size: 30px;
+  }
+
+  .crd {
+    display: flex;
+
+    width: 100%;
+  }
+
+  .date_left {
+    width: 150px;
+  }
+}

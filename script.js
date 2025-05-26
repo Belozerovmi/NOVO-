@@ -150,3 +150,14 @@ function showCustomAlert(message) {
 document.getElementById("callback").onclick = function () {
   showCustomAlert("Заявка принята!");
 };
+
+// Фикс открытия аккордеона в зоне кнопки.
+document
+  .getElementById("accord_btn")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // предотвращаем стандартное поведение
+    const details = document.getElementById("myDetails");
+    if (details) {
+      details.open = !details.open; // переключаем состояние open
+    }
+  });
