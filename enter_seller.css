@@ -81,6 +81,7 @@
   display: flex;
   align-items: baseline;
   gap: 10px;
+  margin-bottom: 50px;
 }
 
 .var_register h2 {
@@ -99,10 +100,19 @@
 .var_register a:hover {
   text-decoration: underline;
 }
+.sec1 {
+  height: 90vh;
+}
 
 @media (min-width: 1024px) and (max-width: 1279px) {
+  .sec1 {
+    height: 100vh;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
+  .sec1 {
+    height: 100vh;
+  }
 }
 
 @media (min-width: 479px) and (max-width: 767px) {
@@ -118,10 +128,16 @@
   .enter_input input {
     width: 100%;
   }
+  .sec1 {
+    height: 100vh;
+  }
 }
 @media (min-width: 320px) and (max-width: 479px) {
   .wrapper1 {
     width: 80%;
+  }
+  .sec1 {
+    height: 100vh;
   }
   .enter_body {
     width: 100%;
