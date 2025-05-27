@@ -348,6 +348,7 @@ hr {
 .pop_up_btn:hover {
   background-color: #ffffff;
   color: rgba(0, 150, 97, 1);
+  outline: 1px solid rgba(0, 150, 97, 1);
 }
 
 /* НАСТРОЙКИ FOOTER */ /* НАСТРОЙКИ FOOTER */ /* НАСТРОЙКИ FOOTER */ /* НАСТРОЙКИ FOOTER */ /* НАСТРОЙКИ FOOTER */ /* НАСТРОЙКИ FOOTER */
@@ -491,7 +492,7 @@ footer {
   }
   .your_plan_flex,
   .other_plans_flex {
-    width: 90%;
+    width: 100%;
   }
   hr {
     width: 100%;
@@ -580,7 +581,7 @@ footer {
 
   .your_plan_flex,
   .other_plans_flex {
-    width: 90%;
+    width: 100%;
   }
 
   .other_plans_inner {
@@ -735,7 +736,7 @@ footer {
 
   .your_plan_flex,
   .other_plans_flex {
-    width: 90%;
+    width: 100%;
   }
 
   .other_plans_inner {
@@ -877,9 +878,12 @@ footer {
     align-items: normal;
   }
   .my_posts h1 {
-    font-size: 30px;
+    font-size: 22px;
   }
 
+  .your_plan_flex h2 {
+    font-size: 20px;
+  }
   .my_posts {
     margin: 24px 0px;
   }
@@ -905,7 +909,7 @@ footer {
 
   .your_plan_flex,
   .other_plans_flex {
-    width: 90%;
+    width: 100%;
   }
 
   .your_plan_inner {

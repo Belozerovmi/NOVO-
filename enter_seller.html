@@ -6,20 +6,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Shantell+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-
  <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="script.js" />
     <link rel="stylesheet" href="page_2_style.css" />
+    <link rel="stylesheet" href="enter_seller.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NOVO</title>
   </head>
   <body>
-
     <div class="header_sec1">
       <header class="header">
         <div class="logo">
@@ -51,57 +50,44 @@
         </div>
         </div>
     </header>
-    <section class="sec1">
-        <div class="wrapper1">
-            <div class="registration_card">
-                <div class="reg_card_inner">
-                    <div class="reg_car_txt">
-                        <h1>Регистрация продавца</h1>
-                        <p>Заполните указаные поля, чтобы создать аккаунт продавца</p>
-                    </div>
-                    <div class="account_reg">
-                        <h1>Аккаунт</h1>
-                        <div class="account_input_flex">
-                            <input class="input_email_account input_data" type="email" name="name"  autocomplete="off" id="emailAccountInput" placeholder="E-mail" value="">
-                            <input class="input_password_account input_data" type="text" name="name"  autocomplete="off" id="passAccountInput" placeholder="Пароль" value="">
+    <!-- HEADER SECTION -->
+<div class="sec1">
+    <div class="wrapper1">
+        <div class="enter_wrapper">
+            <div class="enter_body">
+                <div class="enter_inner">
+                    <h1>Вход в аккаунт</h1>
+
+                    <div class="enter_input">
+                        <div class="email_input">
+                            <p>E-mail</p>
+                        <input id="EnterEmail" class="input_data" type="email" placeholder="">
+                        
                         </div>
-                    </div>
-                    <div class="about_company_reg">
-                        <h1>Про компанию</h1>
-                        <div class="about_company_flex">
-                          
-                            <input class="input_name_company input_data" type="email" name="name"  autocomplete="off" id="nameCompanyInput" placeholder="Название компании" value="">
-                            <input class="input_country_company input_data" type="text" name="name"  autocomplete="off" id="CountryCompanyInput" placeholder="Страна" value="">
-                            <input class="input_city_company input_data" type="text" name="name"  autocomplete="off" id="CityCompanyInput" placeholder="Город" value="">
-                            <input class="input_adress_company input_data" type="text" name="name"  autocomplete="off" id="AdressCompanyInput" placeholder="Адрес" value="">
-                            <input class="input_phone_company input_data" type="tel" name="name"  autocomplete="off" id="PhoneCompanyInput" placeholder="Мобильный телефон" value="">
-                            <input class="input_site_company input_data" type="text" name="name"  autocomplete="off" id="SiteCompanyInput" placeholder="Веб-сайт" value="">
-                        </div>
-                    </div>
-                    <div class="contacts_reg">
-                        <h1>Контактное лицо</h1>
-                        <div class="contactrs_input_flex">
-                            <input class="input_fio_contacts input_data" type="text" name="name"  autocomplete="off" id="FioContactsInput" placeholder="ФИО" value="">
-                            <input class="input_phonenumber_contacts input_data" type="text" name="name"  autocomplete="off" id="PhoneNumContactsInput" placeholder="Мобильный телефон" value="">
-                        </div>
-                    </div>
-                    <div class="checkbox_reg">
-                        <div class="checkbox">
-                            <input class="checkbox-input" type="checkbox" id="myCheckbox">
-                            <label class="checkbox-label" for="myCheckbox"><p>Авторизуясь, <a target="_blank" href="https://policies.google.com/privacy">Вы принимаете Условия использования и Заявлением о конфиденциальности</a> NOVO</p>
-                            </label>
+                        <div class="password_input">
+                            <p>Пароль</p>
+                        <input class="input_data" type="password" placeholder="">
                         </div>
                     </div>
 
-                    <div class="continue_reg_btn">
-                        <a href="page3.html">
-                            <h1 class="continue_btn">ПРОДОЛЖИТЬ</h1>
-                        </a>
+                    <div class="continue_btn">
+                        <a href="page3.html">ПРОДОЛЖИТЬ</a>
                     </div>
+                </div>
+                
             </div>
+            <div class="var_register">
+                <h2>Нет аккаунта? </h2>
+                <a href="page2.html">РЕГИСТРАЦИЯ</a>
+            </div>
+            
         </div>
-    </section>
-    <!-- FOOTER SECTION -->
+    </div>
+</div>
+
+
+
+     <!-- FOOTER SECTION -->
     <footer>
       <div class="footer_inner">
         <div class="footer_NOVO">

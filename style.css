@@ -50,7 +50,7 @@ ul a:hover {
 
 .header_btns ul {
   display: flex;
-
+  font-weight: bold;
   width: 500px;
   justify-content: space-between;
 }
@@ -70,9 +70,10 @@ li {
 
 .link_enter {
   background-color: rgba(0, 150, 97, 1);
-  padding: 10px 32px;
+  padding: 15px 35px;
   border-radius: 10px;
   transition: all 200ms ease-in-out;
+  font-weight: bold;
 }
 
 .link_enter:hover {
@@ -91,7 +92,7 @@ li {
 .wrapper1 {
   display: flex;
   width: 100%;
-  margin-bottom: 180px;
+  margin-bottom: 80px;
 }
 
 .bg_photo1 {
@@ -366,11 +367,11 @@ li {
   flex-direction: column;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  height: 1500px;
+  height: auto;
 }
 
 .sec3_txt {
-  margin-top: 130px;
+  margin-top: 80px;
   color: #000000;
   text-align: center;
 }
@@ -679,7 +680,7 @@ input:focus {
 }
 
 .wrapper4 h1 {
-  margin-top: 120px;
+  margin-top: 50px;
   font-weight: 400;
   font-size: 40px;
 }
@@ -1005,6 +1006,11 @@ footer {
 /*------- медиазапросы под разные устройства -------*/
 /* Стандартные ноутбуки и десктопы */
 
+@media (min-width: 1920px) {
+  .steps_photo {
+    width: 800px;
+  }
+}
 @media (min-width: 1440px) and (max-width: 1919px) {
   .bg_photo1 {
     display: flex;
@@ -1050,16 +1056,14 @@ footer {
     -o-background-size: auto;
     background-size: contain;
   }
-  .wrapper1 {
-    width: 100%;
-  }
+
   .first_img img {
     width: 1280px;
   }
 
-  .abo .wrapper1 {
+  .wrapper1 {
     display: flex;
-    width: 900px;
+    width: 100%;
     margin-bottom: 90px;
   }
   .block {
@@ -1077,10 +1081,7 @@ footer {
     left: -57%;
     top: -237px;
   }
-  .flex_sec4 img {
-    width: 700px;
-    height: 360px;
-  }
+
   .pop_up_body {
     display: flex;
     flex-direction: column;
@@ -1151,6 +1152,10 @@ footer {
     color: #fff;
     font-weight: 100;
   }
+
+  .steps_photo {
+    width: 800px;
+  }
 }
 /* Планшеты (горизонтальная ориентация) и маленькие ноутбуки */
 @media (min-width: 1024px) and (max-width: 1279px) {
@@ -1197,9 +1202,6 @@ footer {
     margin-bottom: 40px;
   }
 
-  .wrapper1 {
-    width: 1024px;
-  }
   .first_img img {
     width: 1024px;
   }
@@ -1218,7 +1220,7 @@ footer {
   .wrapper1 {
     display: flex;
     width: 100%;
-    margin-bottom: 90px;
+    margin-bottom: 50px;
   }
 
   .sec3_txt {
@@ -1254,11 +1256,10 @@ footer {
     left: -63%;
     top: -200px;
   }
-  .flex_sec4 img {
-    width: 600px;
-    height: 300px;
-  }
 
+  .steps_photo {
+    width: 500px;
+  }
   .page_1_txt {
     width: 900px;
   }
@@ -1290,6 +1291,7 @@ footer {
   .flex_step3 {
     display: flex;
     align-items: center;
+    justify-content: space-around;
     width: 900px;
     gap: 60px;
   }
@@ -1433,6 +1435,7 @@ footer {
 
   .wrapper1 {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .input_pop:active,
@@ -1500,7 +1503,7 @@ footer {
     margin-bottom: 20px;
   }
   .sec3_txt {
-    margin-top: 100px;
+    margin-top: 50px;
     color: #000000;
   }
   .wrapper3 {
@@ -1748,6 +1751,7 @@ footer {
   }
   .wrapper1 {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .input_pop:active,
@@ -1830,8 +1834,8 @@ footer {
   }
 
   .block {
-    width: 100px;
-    height: 155px;
+    width: 150px;
+    height: 225px;
   }
   .block span {
     font-size: 14px;
@@ -1842,6 +1846,7 @@ footer {
     flex-direction: column;
     align-items: center;
     color: #000000;
+    margin-top: 30px;
   }
 
   .stepped-container {
@@ -1954,7 +1959,7 @@ footer {
   .special_offer {
     margin-top: 200px;
     width: 479px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     flex-direction: column;
     margin-top: 50px;
   }
@@ -1992,31 +1997,43 @@ footer {
   .right_site_txt p {
     width: 220px;
     font-size: 12px;
+    margin-bottom: 25px;
   }
   .r_site_btn,
   .pop_up_btn {
     display: inline-block;
     font-size: 14px;
     border-radius: 8px;
-    padding: 8px 15px 8px 15px;
+    padding: 15px 35px;
   }
 
   .right_site_txt a {
     display: inline-block;
-    width: 145px;
+    width: 100%;
   }
   .flex_step1,
   .flex_step2,
   .flex_step3 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    width: 400px;
+    justify-content: space-evenly;
+    width: 80%;
     gap: 20px;
     text-align: center;
   }
+  .flex_step2 {
+    flex-direction: row-reverse;
+  }
+
+  .sphm1,
+  .sphm2,
+  .sphm3 {
+    width: 165px;
+  }
+
   .photo img {
-    width: 300px;
+    width: 165px;
     height: auto;
   }
 
@@ -2068,7 +2085,7 @@ footer {
     font-family: Manrope;
     font-weight: 400;
     font-size: 33px;
-    margin-top: 70px;
+    margin-top: 20px;
   }
 
   .sec3_txt h1 {
@@ -2081,7 +2098,7 @@ footer {
     font-size: 16px;
   }
   .sec3_txt {
-    margin-top: 80px;
+    margin-top: 40px;
     color: #000000;
   }
   .sec4_button {
@@ -2236,6 +2253,7 @@ footer {
   }
   .wrapper1 {
     width: 100%;
+    margin-bottom: 30px;
   }
 
   .wrapper2 {
@@ -2320,6 +2338,7 @@ footer {
   .cards_special {
     flex-direction: column;
     align-items: center;
+    gap: 40px;
   }
 
   .page_1_txt {
@@ -2344,7 +2363,7 @@ footer {
   }
 
   .page_1_btn {
-    font-size: 12px;
+    font-size: 14px;
     padding: 14px 22px 14px 22px;
   }
 
@@ -2358,7 +2377,8 @@ footer {
     width: 280px;
   }
 
-  .cards_special {
+  .cards_special a {
+    width: 100%;
   }
   .crd h4 {
     color: rgba(0, 150, 97, 1);
@@ -2408,7 +2428,7 @@ footer {
     margin-top: 200px;
     width: 300px;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     flex-direction: column;
   }
   .sec3 {
@@ -2450,18 +2470,19 @@ footer {
   .right_site_txt p {
     width: 220px;
     font-size: 12px;
+    margin-bottom: 20px;
   }
   .r_site_btn,
   .pop_up_btn {
     display: inline-block;
     font-size: 14px;
     border-radius: 8px;
-    padding: 8px 15px 8px 15px;
+    padding: 15px 60px;
   }
 
   .right_site_txt a {
     display: inline-block;
-    width: 145px;
+    width: 100%;
   }
   .flex_step1,
   .flex_step2,
@@ -2469,12 +2490,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 300px;
+
+    width: 80%;
     gap: 20px;
     text-align: center;
   }
   .photo img {
-    width: 300px;
     height: auto;
   }
 
@@ -2537,8 +2558,8 @@ footer {
   }
   .wrapper4 h1 {
     font-family: Manrope;
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 28px;
     margin-top: 30px;
   }
 
@@ -2548,7 +2569,7 @@ footer {
     font-size: 16px;
   }
   .sec3_txt {
-    margin-top: 80px;
+    margin-top: 40px;
     color: #000000;
   }
   .sec4_button {
@@ -2616,6 +2637,27 @@ footer {
     text-align: center;
     text-shadow: none;
     font-size: 12px;
+  }
+
+  .sphm3,
+  .sphm2,
+  .sphm1 {
+    width: 70%;
+  }
+  .br_step {
+    display: none;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .steps_photo {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .step_photos_mobile {
+    display: none;
   }
 }
 

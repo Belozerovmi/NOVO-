@@ -201,9 +201,11 @@
   box-sizing: border-box;
   padding-left: 10px;
   font-size: 20px;
+  transition: all 200ms ease-in-out;
 }
 
-.search_input:focus {
+.search_input:focus,
+.search_input:active {
   outline: 1px solid rgb(208, 208, 208);
 }
 
