@@ -175,6 +175,9 @@
   display: block;
 }
 
+.arrow2 {
+  display: block;
+}
 /* Настройки HEADER */ /* Настройки HEADER */ /* Настройки HEADER */ /* Настройки HEADER */ /* Настройки HEADER */ /* Настройки HEADER */
 
 .sec3 {
@@ -319,8 +322,8 @@ hr {
 
 .card_link2:hover .arrow,
 .card_link3:hover .arrow {
-  border: 2px rgb(0, 0, 0) solid;
-  background-color: #e7e7e7;
+  border: 2px rgba(0, 150, 97, 1) solid;
+  background-color: rgba(0, 150, 97, 0.2);
 }
 
 .sales_department {
